@@ -1,0 +1,389 @@
+<div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+    <div class="container">
+        <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+            <div class="col-md-12 m-auto text-white p-b-20">
+                &nbsp;
+            </div>
+
+        </div>s
+    </div>
+</div>
+<div class="container-fluid pull-up">
+    
+    <form method="post" action="https://ship.nimbuspost.comorder-create.html">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card m-b-30">
+                    <div class="card-header">
+                        <h5 class="m-b-0">
+                            Order Information
+                        </h5>
+                        <button class="btn btn-sm btn-success" style="background:#12263f!important;float: right;margin-top: -26px;margin-bottom: 5px;border: 1px solid #12263F!important;" title="How to Create Order" style="cursor: pointer;color: #A94442;" data-toggle="modal" data-target="#exampleModalCenter"><i class="mdi mdi-comment-question"></i></button>
+                    </div>
+
+                    <div class="card-body ">
+                    <div class="row">
+                        <div class="form-group col-lg-3">
+                            <label>Order ID</label>
+                            <input type="text" required="" class="form-control" name="order_id" placeholder="Order Id" value="1629998120" />
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label>Order Type</label>
+                            <select id="paymenttype" required="" name="payment_method" class="form-control">
+                                                            <option  value="COD">Cash on Delivery</option>
+                                <option  value="prepaid">Prepaid</option>
+                                <option  value="reverse">Reverse</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card m-b-30">
+                    <div class="card-header">
+                        <h5 class="m-b-0">
+                            Shipping Information
+                        </h5>
+                    </div>
+                    <div class="card-body ">
+                    <div class="row">
+                            <div class="form-group col-sm-6">
+                            <label>First Name</label>
+                            <input type="text" name="shipping_name" id="shipping_name" autocomplete="nope" required="" class="form-control" placeholder="First Name" value="" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Last name</label>
+                                <input type="text" name="shipping_lname" autocomplete="nope" id="shipping_lname"  class="form-control" placeholder="Last Name" value="" />
+                            </div>
+                        </div>
+                      
+                       <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" name="shipping_company_name" id="shipping_company_name" autocomplete="nope" class="form-control" placeholder="Company Name" value="" />
+                       </div>  
+                       <br> 
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label>Address</label>
+                                <textarea class="form-control" id="shipping_address_1" autocomplete="nope" required="" name="shipping_address_1" placeholder="Shipping Address"></textarea>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Address 2 (Optional)</label>
+                                <textarea class="form-control" autocomplete="nope" name="shipping_address_2"  id="shipping_address_2" placeholder="Address 2"></textarea>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label>Pin Code</label>
+                                <input type="text" name="shipping_pincode" id="shipping_pincode"  autocomplete="nope" required="" class="form-control" placeholder="Pin Code" value="" />
+                                <span class="errormsg" id="errormsg" style="color: #8b0001;font-weight: bold;"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label>City</label>
+                                <input type="text" name="shipping_city" autocomplete="nope" id="shipping_getcity" required="" class="form-control" placeholder="City" value="" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>State</label>
+                                <input type="text" name="shipping_state" autocomplete="nope" id="shipping_getstate" required="" class="form-control" placeholder="State" value="" />
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label>Phone</label>
+                                <input type="text" name="shipping_phone" id="shipping_phone" autocomplete="nope" required="" class="form-control" placeholder="Phone" value="" />
+                            </div>
+                        </div> <p>&nbsp;</p> <br> <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card m-b-30">
+                    <div class="card-header">
+                        <h5 class="m-b-0">
+                            Billing Information
+                        </h5>
+                         <br>
+                        <input type="checkbox" id="toshipping_checkbox">
+                        <em>Check this box if Shipping and Billing Information are the same.</em>
+                    </div>
+                    <div class="card-body ">
+                    <div class="row">
+                            <div class="form-group col-sm-6">
+                            <label>First Name</label>
+                            <input type="text" name="billing_name" id="billing_shipping_name" autocomplete="nope"  class="form-control" placeholder="First Name" value="" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Last name</label>
+                                <input type="text" name="billing_lname" autocomplete="nope" id="billing_shipping_lname"  class="form-control" placeholder="Last Name" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" name="billing_company_name" id="billing_shipping_company_name" autocomplete="nope" class="form-control" placeholder="Company Name" value="" />
+                       </div>  
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label>Address</label>
+                                <textarea class="form-control" autocomplete="nope"  name="billing_address_1" id="billing_shipping_address_1" placeholder="Shipping Address"></textarea>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Address 2 (Optional)</label>
+                                <textarea class="form-control" autocomplete="nope" name="billing_address_2"  id="billing_shipping_address_2" placeholder="Address 2"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label>Pin Code</label>
+                                <input type="text" name="billing_pincode" id="billing_shipping_pincode" autocomplete="nope" class="form-control" placeholder="Pin Code" value="" />
+                                <span class="errormsg" id="errormsg" style="color: #8b0001;font-weight: bold;"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label>City</label>
+                                <input type="text" name="billing_city" autocomplete="nope" id="billing_shipping_getcity"  class="form-control" placeholder="City" value="" />
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>State</label>
+                                <input type="text" name="billing_state" autocomplete="nope" id="billing_shipping_getstate"  class="form-control" placeholder="State" value="" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label>Phone</label>
+                                <input type="text" name="billing_phone"   id="billing_shipping_phone" autocomplete="nope"  class="form-control" placeholder="Phone" value="" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label>GST Number</label>
+                                <input type="text" name="billing_gst_number" maxlength="15"  id="billings_gst_number" autocomplete="nope"  class="form-control" placeholder="GST Number" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table invoice-detail-table create-invoice com-create-sales-table product_det_table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Amount(Rs)</th>
+                                        <th>SKU (Optional)</th>
+                                        <th>Add More</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="field_wrapper" class="product_table_tbody">
+                                                                        <tr id="customerfield0">
+                                            <td>
+                                                <input type="text" autocomplete="nope" id="perproduct_ids0" name="products[0][product_name]" required="" class="form-control" placeholder="Product Name" value="">
+                                            </td>
+                                            <td>
+                                                <input type="text" autocomplete="nope" name="products[0][product_qty]" id="basic_unit0" class="form-control" required="" value="">
+                                            </td>
+                                            <td>
+                                                <input type="text" autocomplete="nope" id="productrate0" name="products[0][product_price]" required="" class="form-control" placeholder="Amount" value="">
+                                            </td>
+                                            <td>
+                                                <input type="text" autocomplete="nope" id="productsku0" name="products[0][product_sku]" class="form-control" placeholder="SKU" value="">
+                                                <input type="hidden" id="product_id0" name="products[0][product_id]" class="form-control" value="">
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary btn-sm" id="addmorefields" href="javascript:void(0);" title="Product"><i class="mdi mdi-plus-one"></i></a>
+                                            </td>
+                                        </tr>
+                                                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <table class="table-responsive">
+                            <tbody>
+
+                                <tr>
+                                    <th style="margin-top: 7px;display: block;">Weight*</th>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" autocomplete="nope" name="weight" class="form-control" placeholder="in grams" value="">
+                                        </div>
+                                        <p>eg: 500, 300</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="margin-top: 7px;display: block;">Dimensions*</th>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="text" name="length" autocomplete="nope" class="form-control" placeholder="CM" value="">
+                                            <input type="text" name="height" autocomplete="nope" class="form-control" placeholder="CM" value="">
+                                            <input type="text" name="breadth" autocomplete="nope" class="form-control" placeholder="CM" value="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <div class="form-group col-sm-6">
+                            <label>Shipping Charges</label>
+                            <input type="text" autocomplete="nope" name="shipping_charges" required="" class="form-control" placeholder="Shipping Charges" value="0" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>COD Charges</label>
+                            <input type="text" autocomplete="nope" name="cod_charges" required="" class="form-control" placeholder="COD Charges" value="0" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>Tax Amount</label>
+                            <input type="text" autocomplete="nope" name="tax_amount" required="" class="form-control" placeholder="Tax Amount" value="0" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>Discount</label>
+                            <input type="text" autocomplete="nope" name="discount" required="" class="form-control" placeholder="Discount Applied" value="0" />
+                        </div>
+
+                        <button type="submit" name="submit" class="btn btn-primary">Save</button>&nbsp;
+                        <a href="order.html" name="cancel" class="btn btn-danger">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">How to Create Manual Order on NimbusPost?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <iframe width="490" style="margin: 5px;border-radius: 5px;" height="315" src="https://www.youtube.com/embed/Gzik1OPJ-zM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+    <script type="text/javascript">
+        $("#shipping_pincode").change(function() {
+            var pincode = $('#shipping_pincode').val();
+            if (pincode == "") {
+                $('#shipping_getcity').val('');
+                $('#shipping_getstate').val('');
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: "orders/getcitystate", //file which read zip code excel file
+                    data: {
+                        'pincode': pincode
+                    },
+                    success: function(data) {
+                        if (data == '') {
+                            $('#shipping_getcity').val('');
+                            $('#shipping_getstate').val('');
+                            return false;
+                        } else {
+                            var getData = $.parseJSON(data);
+                            $('#shipping_getcity').val(getData.city);
+                            $('#shipping_getstate').val(getData.state);
+                        }
+                    },
+                });
+            }
+        })
+
+        $("#billing_shipping_pincode").change(function() {
+            var pincode = $('#billing_shipping_pincode').val();
+            if (pincode == "") {
+                $('#billing_shipping_getcity').val('');
+                $('#billing_shipping_getstate').val('');
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: "orders/getcitystate", //file which read zip code excel file
+                    data: {
+                        'pincode': pincode
+                    },
+                    success: function(data) {
+                        if (data == '') {
+                            $('#billing_shipping_getcity').val('');
+                            $('#billing_shipping_getstate').val('');
+                            return false;
+                        } else {
+                            var getData = $.parseJSON(data);
+                            $('#billing_shipping_getcity').val(getData.city);
+                            $('#billing_shipping_getstate').val(getData.state);
+                        }
+                    },
+                });
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var addButton = $('#addmorefields');
+            var wrapper = $('#field_wrapper');
+            var x = 1;
+            $(addButton).click(function() {
+                var fieldHTML = '<tr id="customerfield' + x + '">\
+                    <td>\
+                    <input type="text" autocomplete="nope" id="perproduct_ids' + x + '"  name="products[' + x + '][product_name]" required="" class="form-control" placeholder="Product Name">\
+                    </td>\
+                    <td>\
+                    <input type="text" autocomplete="nope" name="products[' + x + '][product_qty]" id="basic_unit' + x + '" class="form-control"  required="" value="1">\
+                    </td>\
+                    <td>\
+                    <input type="text" autocomplete="nope" id="productrate' + x + '" name="products[' + x + '][product_price]" required="" class="form-control" placeholder="Amount">\
+                    </td>\
+                    <td>\
+                    <input type="text" autocomplete="nope" id="productsku' + x + '" name="products[' + x + '][product_sku]" class="form-control" placeholder="SKU">\
+                    <input type="hidden" id="products_id' + x + '" name="products[' + x + '][products_id]" class="form-control">\
+                    </td>\
+                    <td>\
+                    <a href="javascript:void(0);" class="btn btn-danger btn-sm" id="remove_button" href="javascript:void(0);" onclick="removediv(' + x + ');"  title="Remove Field" ><i class="mdi mdi-minus-circle-outline"></i></a></td>\
+                    </tr>';
+                x++;
+                $(wrapper).append(fieldHTML);
+                $('.js-example-data-array').select2();
+            });
+        });
+
+        function removediv(id) {
+            var element = document.getElementById("customerfield" + id);
+            element.parentNode.removeChild(element);
+        }
+
+        $("#toshipping_checkbox").on("click",function(){
+           var biil = $(this).is(":checked");
+            $("[id^='billing_']").each(function(){
+              var tmpID = this.id.split('billing_')[1];
+              $(this).val(biil?$("#"+tmpID).val():"");
+            }); 
+        });
+    </script>   
+</div>

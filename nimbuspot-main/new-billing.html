@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Billing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body class="pace-done">
+    <!-- Google Tag Manager (noscript) -->
+   
+    <!-- End Google Tag Manager (noscript) -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-brand">
+            <p><img src="img/Nimbus_Logo.jpg" width="100" alt="Logo"></p>
+            <div class="ml-auto">
+                <!--<a href="#" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle pinned"></a>
+                    <a href="#" class="admin-close-sidebar"></a>-->
+            </div>
+        </div>
+        <div class="admin-sidebar-wrapper js-scrollbar">
+            <ul class="menu">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Dashboard</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-view-dashboard"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                <li class="menu-item ">
+                    <a href="order.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Orders</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-package-variant-closed"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="shipment.html"class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Shipments
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-truck-fast"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="ndr.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Exception
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-shield-remove"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="weightreconciliation.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Weight Reco.
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-weight-kilogram"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+                <li class="menu-item ">
+                    <a href="new-billing.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Billing
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-cash"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="reports.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Reports
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-file-document"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="operation.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Control Tower
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-desktop-tower"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="escalations.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Escalations
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-message-text-outline"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                <li class="menu-item ">
+                    <a href="apps.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Addons
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-apps"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                <li class="menu-item ">
+                    <a href="setting-main.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Settings
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-settings"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+
+
+                <li class="menu-item ">
+                    <a href="escalations_new.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Support
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-help"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+
+            </ul>
+        </div>
+    </aside>
+    <main class="admin-main">
+        <!--site header begins-->
+        <header class="admin-header">
+            <p><img src="img/Nimbus_Logo.jpg" style="margin-left: 25px;margin-top: 10px;" width="100" alt="Logo">
+            </p>
+            <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+            <nav class=" ml-auto">
+                <ul class="nav align-items-center">
+                    <li class="nav-item m-t-20 m-r-50">
+                        <form method="get" action="#">
+                            <div class="form-group input-group mb-3">
+                                <label style="margin-right: 5px;margin-top: 5px;">Search AWB:</label>
+                                <input type="text" class="form-control input-sm" autocomplete="off"
+                                    name="filter[awb_no]" placeholder="AWB Number(s)" required>
+                                <input type="hidden" autocomplete="off" name="filter[start_date]" value="2019-01-01"
+                                    placeholder="from">
+                                <input type="hidden" autocomplete="off" name="filter[end_date]" value="2021-08-12"
+                                    placeholder="to">
+                                <div class="input-group-append"><button type="submit" class="btn btn-sm btn-dark"><span
+                                            class="mdi mdi-magnify" style="font-size: initial;"></span></button></div>
+
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pincode.html" class="btn btn-sm btn-info m-r-10"><i class="mdi mdi-download"></i>
+                            Serviceable pincodes list</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-light">Balance &#8377;-212.04</button>
+                    </li>
+                    <li class="nav-item m-l-10">
+                        <button class="btn btn-sm btn-success"
+                            style="background:#12263f!important;border: 1px solid #12263f!important;"
+                            data-toggle="modal" data-target=".recharge_wallet_form"><i class="mdi mdi-flash"></i>
+                            Recharge</button>
+                    </li>
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            ashutosh bharti </a>
+                        <div class="dropdown-menu  dropdown-menu-right">
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="setting.html">Settings</a>
+                            <!--<a class="dropdown-item" href="#">Customer Support</a>-->
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="user.html"> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <section class="admin-content">
+            <div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+                <div class="container">
+                    <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                        <div class="col-md-12 m-auto text-white p-b-20">
+                            &nbsp;
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pull-up">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h4>Billing
+                                            - Price Calculator </h4>
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <ul class="nav nav-tabs m-b-15">
+                                    <li class="nav-item">
+                                        <a class="nav-link active " href="new-billing.html"><i
+                                                class="mdi mdi-calculator"></i> Price Calculator</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="cod_remittance.html"><i
+                                                class="mdi mdi-cash"></i> COD Remittance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="recharge-logs.html"><i
+                                                class="mdi mdi-wallet"></i> Wallet Transactions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="shipping_charges.html"><i
+                                                class="mdi mdi-truck-fast"></i> Shipping Charges</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="invoice.html"><i class="mdi mdi-file-pdf"></i>
+                                            Invoice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="credit_notes.html"<i
+                                                class="mdi mdi-file-pdf"></i> Credit Notes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="weight.html"><i
+                                                class="mdi mdi-weight"></i> Weight Reconciliation</a>
+                                    </li>
+
+
+                                </ul>
+
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <form id="pricing_calculator_form" method="post"
+                                            action="https://ship.nimbuspost.com/tools/calculate_pricing">
+                                            <div class="card">
+                                                <div class="card-header bg-dark text-white">
+                                                    <h5 class="m-b-0" style="text-align:center;">
+                                                        Shipping Rates Calculator
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row m-t-20">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Pick-up Pincode</label>
+                                                        <div class="input-group mb-2">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text"><i
+                                                                        class="mdi mdi-map-marker"></i></div>
+                                                            </div>
+                                                            <input type="text" name="origin" class="form-control"
+                                                                required="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Delivery Pincode</label>
+                                                        <div class="input-group mb-2">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text"><i
+                                                                        class="mdi mdi-map-marker"></i></div>
+                                                            </div>
+                                                            <input type="text" name="destination" class="form-control"
+                                                                required="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Weight</label>
+                                                        <div class="input-group mb-2">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">Kg</div>
+                                                            </div>
+                                                            <input type="text" name="weight" class="form-control"
+                                                                required="" value="0.5" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label>L(cm)</label>
+                                                        <input type="text" name="length" class="form-control"
+                                                            required="" value="10" placeholder="cm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label>H(cm)</label>
+                                                        <input type="text" name="height" class="form-control"
+                                                            required="" value="10" placeholder="cm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <div class="form-group">
+                                                        <label>B(cm)</label>
+                                                        <input type="text" name="breadth" class="form-control"
+                                                            required="" value="10" placeholder="cm">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>Value in INR</label>
+                                                        <div class="input-group mb-2">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">&#8377;</div>
+                                                            </div>
+                                                            <input type="text" name="cod_amount" class="form-control"
+                                                                placeholder="e.g 1000">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>COD</label>
+                                                        <select required="" name="cod" class="form-control">
+                                                            <option value="no">No</option>
+                                                            <option value="yes">Yes</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-sm-12 text-center">
+                                                        <button type="submit" style="margin-top: 8px;margin-left: 15px;"
+                                                            name="submit" class="btn btn-primary"><i
+                                                                class="mdi mdi-calculator"></i> Calculate</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="table-responsive m-t-30">
+                                                <table class="table table-bordered table-sm text-left  table-hover "
+                                                    id="calculated_price" style="display:none;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="text-align: center">S.No</th>
+                                                            <th style="text-align: center">Provider</th>
+                                                            <th style="text-align: center">Courier Charges</th>
+                                                            <th style="text-align: center">COD Charges</th>
+                                                            <th style="text-align: center">Total Charges</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="5" class="text-right">*GST Additional</td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+
+
+
+                                        </form>
+
+
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="card m-b-20">
+                                            <div class="card-header bg-dark text-white">
+                                                <h5 class="m-b-0" style="text-align:center;">
+                                                    Pricing Plans
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab-z" data-toggle="tab"
+                                                    href="#starter" role="tab" aria-controls="home"
+                                                    aria-selected="true">Starter (Active)</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " id="profile-tab-z" data-toggle="tab"
+                                                    href="#standard" role="tab" aria-controls="profile"
+                                                    aria-selected="false">Standard </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " id="contact-tab-z" data-toggle="tab"
+                                                    href="#enterprise" role="tab" aria-controls="contact"
+                                                    aria-selected="false">Enterprise </a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent1">
+                                            <div class="tab-pane fade  show active" id="starter" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <div class="table-responsive m-t-10">
+                                                    <table
+                                                        class="table table-bordered table-sm text-left  table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align: center;">Courier</th>
+                                                                <th style="text-align: center;">Within City</th>
+                                                                <th style="text-align: center;">Within State</th>
+                                                                <th style="text-align: center;">Metro To Metro</th>
+                                                                <th style="text-align: center;">Rest of India</th>
+                                                                <th style="text-align: center;">North East, J&K</th>
+                                                                <th style="text-align: center;">COD Charges</th>
+                                                                <th style="text-align: center;">COD %</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td style="text-align:center;">Bluedart Express</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">50</td>
+                                                                <td style="text-align:center;">68</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Air</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">54</td>
+                                                                <td style="text-align:center;">68</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">57</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 10 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">165</td>
+                                                                <td style="text-align:center;">203</td>
+                                                                <td style="text-align:center;">301</td>
+                                                                <td style="text-align:center;">352</td>
+                                                                <td style="text-align:center;">390</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 2 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">69</td>
+                                                                <td style="text-align:center;">85</td>
+                                                                <td style="text-align:center;">106</td>
+                                                                <td style="text-align:center;">127</td>
+                                                                <td style="text-align:center;">157</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 20 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">291</td>
+                                                                <td style="text-align:center;">309</td>
+                                                                <td style="text-align:center;">412</td>
+                                                                <td style="text-align:center;">487</td>
+                                                                <td style="text-align:center;">577</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 5 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">144</td>
+                                                                <td style="text-align:center;">161</td>
+                                                                <td style="text-align:center;">174</td>
+                                                                <td style="text-align:center;">284</td>
+                                                                <td style="text-align:center;">225</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Air</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">54</td>
+                                                                <td style="text-align:center;">71</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface</td>
+                                                                <td style="text-align:center;">29</td>
+                                                                <td style="text-align:center;">35</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">51</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 1 K.G</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">55</td>
+                                                                <td style="text-align:center;">55</td>
+                                                                <td style="text-align:center;">55</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 10 K.G</td>
+                                                                <td style="text-align:center;">161</td>
+                                                                <td style="text-align:center;">190</td>
+                                                                <td style="text-align:center;">275</td>
+                                                                <td style="text-align:center;">325</td>
+                                                                <td style="text-align:center;">370</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 5 K.G</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">149</td>
+                                                                <td style="text-align:center;">171</td>
+                                                                <td style="text-align:center;">185</td>
+                                                                <td style="text-align:center;">209</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">40</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">65</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 1 K.G</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 2 K.G</td>
+                                                                <td style="text-align:center;">74</td>
+                                                                <td style="text-align:center;">74</td>
+                                                                <td style="text-align:center;">74</td>
+                                                                <td style="text-align:center;">74</td>
+                                                                <td style="text-align:center;">74</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 5 K.G</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Gati 5 K.G</td>
+                                                                <td style="text-align:center;">82</td>
+                                                                <td style="text-align:center;">96</td>
+                                                                <td style="text-align:center;">108</td>
+                                                                <td style="text-align:center;">128</td>
+                                                                <td style="text-align:center;">162</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">2.3%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax</td>
+                                                                <td style="text-align:center;">27</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">40</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">53</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 1 K.G</td>
+                                                                <td style="text-align:center;">43</td>
+                                                                <td style="text-align:center;">45</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">67</td>
+                                                                <td style="text-align:center;">91</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 2 K.G</td>
+                                                                <td style="text-align:center;">65</td>
+                                                                <td style="text-align:center;">80</td>
+                                                                <td style="text-align:center;">100</td>
+                                                                <td style="text-align:center;">120</td>
+                                                                <td style="text-align:center;">150</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 5 K.G</td>
+                                                                <td style="text-align:center;">120</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">168</td>
+                                                                <td style="text-align:center;">183</td>
+                                                                <td style="text-align:center;">205</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Udaan</td>
+                                                                <td style="text-align:center;">27</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">51</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 1 K.G</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">66</td>
+                                                                <td style="text-align:center;">68</td>
+                                                                <td style="text-align:center;">93</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 2 K.G</td>
+                                                                <td style="text-align:center;">65</td>
+                                                                <td style="text-align:center;">89</td>
+                                                                <td style="text-align:center;">104</td>
+                                                                <td style="text-align:center;">125</td>
+                                                                <td style="text-align:center;">155</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 5 K.G</td>
+                                                                <td style="text-align:center;">132</td>
+                                                                <td style="text-align:center;">159</td>
+                                                                <td style="text-align:center;">162</td>
+                                                                <td style="text-align:center;">173</td>
+                                                                <td style="text-align:center;">238</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees Air</td>
+                                                                <td style="text-align:center;">29</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">57</td>
+                                                                <td style="text-align:center;">35</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees Surface</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">53</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">1.7%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade " id="standard" role="tabpanel"
+                                                aria-labelledby="profile-tab">
+                                                <div class="table-responsive m-t-10">
+                                                    <table
+                                                        class="table table-bordered table-sm text-left  table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align: center;">Courier</th>
+                                                                <th style="text-align: center;">Within City</th>
+                                                                <th style="text-align: center;">Within State</th>
+                                                                <th style="text-align: center;">Metro To Metro</th>
+                                                                <th style="text-align: center;">Rest of India</th>
+                                                                <th style="text-align: center;">North East, J&K</th>
+                                                                <th style="text-align: center;">COD Charges</th>
+                                                                <th style="text-align: center;">COD %</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td style="text-align:center;">Bluedart Express</td>
+                                                                <td style="text-align:center;">37</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">66</td>
+                                                                <td style="text-align:center;">37</td>
+                                                                <td style="text-align:center;">2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Air</td>
+                                                                <td style="text-align:center;">29</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">48</td>
+                                                                <td style="text-align:center;">59</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 10 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">161</td>
+                                                                <td style="text-align:center;">199</td>
+                                                                <td style="text-align:center;">267</td>
+                                                                <td style="text-align:center;">318</td>
+                                                                <td style="text-align:center;">364</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 2 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">83</td>
+                                                                <td style="text-align:center;">97</td>
+                                                                <td style="text-align:center;">117</td>
+                                                                <td style="text-align:center;">142</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 20 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">286</td>
+                                                                <td style="text-align:center;">304</td>
+                                                                <td style="text-align:center;">407</td>
+                                                                <td style="text-align:center;">482</td>
+                                                                <td style="text-align:center;">572</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 5 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">147</td>
+                                                                <td style="text-align:center;">159</td>
+                                                                <td style="text-align:center;">182</td>
+                                                                <td style="text-align:center;">206</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Air</td>
+                                                                <td style="text-align:center;">23</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">66</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">35</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 1 K.G</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 10 K.G</td>
+                                                                <td style="text-align:center;">157</td>
+                                                                <td style="text-align:center;">187</td>
+                                                                <td style="text-align:center;">260</td>
+                                                                <td style="text-align:center;">315</td>
+                                                                <td style="text-align:center;">355</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 5 K.G</td>
+                                                                <td style="text-align:center;">132</td>
+                                                                <td style="text-align:center;">142</td>
+                                                                <td style="text-align:center;">155</td>
+                                                                <td style="text-align:center;">175</td>
+                                                                <td style="text-align:center;">200</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart</td>
+                                                                <td style="text-align:center;">29</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">51</td>
+                                                                <td style="text-align:center;">58</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 1 K.G</td>
+                                                                <td style="text-align:center;">63</td>
+                                                                <td style="text-align:center;">63</td>
+                                                                <td style="text-align:center;">63</td>
+                                                                <td style="text-align:center;">63</td>
+                                                                <td style="text-align:center;">63</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 2 K.G</td>
+                                                                <td style="text-align:center;">73</td>
+                                                                <td style="text-align:center;">73</td>
+                                                                <td style="text-align:center;">73</td>
+                                                                <td style="text-align:center;">73</td>
+                                                                <td style="text-align:center;">73</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 5 K.G</td>
+                                                                <td style="text-align:center;">139</td>
+                                                                <td style="text-align:center;">139</td>
+                                                                <td style="text-align:center;">139</td>
+                                                                <td style="text-align:center;">139</td>
+                                                                <td style="text-align:center;">139</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Gati 5 K.G</td>
+                                                                <td style="text-align:center;">80</td>
+                                                                <td style="text-align:center;">94</td>
+                                                                <td style="text-align:center;">106</td>
+                                                                <td style="text-align:center;">126</td>
+                                                                <td style="text-align:center;">160</td>
+                                                                <td style="text-align:center;">27</td>
+                                                                <td style="text-align:center;">2.2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax</td>
+                                                                <td style="text-align:center;">23</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 1 K.G</td>
+                                                                <td style="text-align:center;">40</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">59</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">88</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 2 K.G</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">78</td>
+                                                                <td style="text-align:center;">95</td>
+                                                                <td style="text-align:center;">110</td>
+                                                                <td style="text-align:center;">138</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 5 K.G</td>
+                                                                <td style="text-align:center;">117</td>
+                                                                <td style="text-align:center;">133</td>
+                                                                <td style="text-align:center;">153</td>
+                                                                <td style="text-align:center;">172</td>
+                                                                <td style="text-align:center;">198</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Udaan</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">29</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">48</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 1 K.G</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">61</td>
+                                                                <td style="text-align:center;">66</td>
+                                                                <td style="text-align:center;">89</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 2 K.G</td>
+                                                                <td style="text-align:center;">61</td>
+                                                                <td style="text-align:center;">82</td>
+                                                                <td style="text-align:center;">95</td>
+                                                                <td style="text-align:center;">115</td>
+                                                                <td style="text-align:center;">142</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.7%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 5 K.G</td>
+                                                                <td style="text-align:center;">119</td>
+                                                                <td style="text-align:center;">144</td>
+                                                                <td style="text-align:center;">146</td>
+                                                                <td style="text-align:center;">162</td>
+                                                                <td style="text-align:center;">214</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.7%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees Air</td>
+                                                                <td style="text-align:center;">27</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">56</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees Surface</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">29</td>
+                                                                <td style="text-align:center;">37</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">51</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade " id="enterprise" role="tabpanel"
+                                                aria-labelledby="contact-tab">
+                                                <div class="table-responsive m-t-10">
+                                                    <table
+                                                        class="table table-bordered table-sm text-left  table-hover ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align: center;">Courier</th>
+                                                                <th style="text-align: center;">Within City</th>
+                                                                <th style="text-align: center;">Within State</th>
+                                                                <th style="text-align: center;">Metro To Metro</th>
+                                                                <th style="text-align: center;">Rest of India</th>
+                                                                <th style="text-align: center;">North East, J&K</th>
+                                                                <th style="text-align: center;">COD Charges</th>
+                                                                <th style="text-align: center;">COD %</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td style="text-align:center;">Bluedart Express</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">48</td>
+                                                                <td style="text-align:center;">63</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Air</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">35</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">59</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 10 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">157</td>
+                                                                <td style="text-align:center;">197</td>
+                                                                <td style="text-align:center;">259</td>
+                                                                <td style="text-align:center;">312</td>
+                                                                <td style="text-align:center;">356</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 2 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">60</td>
+                                                                <td style="text-align:center;">80</td>
+                                                                <td style="text-align:center;">92</td>
+                                                                <td style="text-align:center;">112</td>
+                                                                <td style="text-align:center;">136</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 20 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">281</td>
+                                                                <td style="text-align:center;">299</td>
+                                                                <td style="text-align:center;">402</td>
+                                                                <td style="text-align:center;">477</td>
+                                                                <td style="text-align:center;">567</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Delhivery Surface 5 K.G
+                                                                </td>
+                                                                <td style="text-align:center;">131</td>
+                                                                <td style="text-align:center;">142</td>
+                                                                <td style="text-align:center;">153</td>
+                                                                <td style="text-align:center;">180</td>
+                                                                <td style="text-align:center;">198</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Air</td>
+                                                                <td style="text-align:center;">22</td>
+                                                                <td style="text-align:center;">34</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">46</td>
+                                                                <td style="text-align:center;">58</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 1 K.G</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">49</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 10 K.G</td>
+                                                                <td style="text-align:center;">152</td>
+                                                                <td style="text-align:center;">182</td>
+                                                                <td style="text-align:center;">255</td>
+                                                                <td style="text-align:center;">305</td>
+                                                                <td style="text-align:center;">340</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">DTDC Surface 5 K.G</td>
+                                                                <td style="text-align:center;">128</td>
+                                                                <td style="text-align:center;">140</td>
+                                                                <td style="text-align:center;">150</td>
+                                                                <td style="text-align:center;">170</td>
+                                                                <td style="text-align:center;">195</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">42</td>
+                                                                <td style="text-align:center;">46</td>
+                                                                <td style="text-align:center;">55</td>
+                                                                <td style="text-align:center;">30</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 1 K.G</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">62</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 2 K.G</td>
+                                                                <td style="text-align:center;">72</td>
+                                                                <td style="text-align:center;">72</td>
+                                                                <td style="text-align:center;">72</td>
+                                                                <td style="text-align:center;">72</td>
+                                                                <td style="text-align:center;">72</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Ekart 5 K.G</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">32</td>
+                                                                <td style="text-align:center;">2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Gati 5 K.G</td>
+                                                                <td style="text-align:center;">77</td>
+                                                                <td style="text-align:center;">92</td>
+                                                                <td style="text-align:center;">103</td>
+                                                                <td style="text-align:center;">123</td>
+                                                                <td style="text-align:center;">158</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">2%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax</td>
+                                                                <td style="text-align:center;">23</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">52</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">2.1%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 1 K.G</td>
+                                                                <td style="text-align:center;">37</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">56</td>
+                                                                <td style="text-align:center;">61</td>
+                                                                <td style="text-align:center;">85</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 2 K.G</td>
+                                                                <td style="text-align:center;">59</td>
+                                                                <td style="text-align:center;">76</td>
+                                                                <td style="text-align:center;">90</td>
+                                                                <td style="text-align:center;">106</td>
+                                                                <td style="text-align:center;">132</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Shadowfax 5 K.G</td>
+                                                                <td style="text-align:center;">113</td>
+                                                                <td style="text-align:center;">130</td>
+                                                                <td style="text-align:center;">148</td>
+                                                                <td style="text-align:center;">168</td>
+                                                                <td style="text-align:center;">193</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Udaan</td>
+                                                                <td style="text-align:center;">24</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">35</td>
+                                                                <td style="text-align:center;">38</td>
+                                                                <td style="text-align:center;">46</td>
+                                                                <td style="text-align:center;">27</td>
+                                                                <td style="text-align:center;">1.7%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 1 K.G</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">45</td>
+                                                                <td style="text-align:center;">58</td>
+                                                                <td style="text-align:center;">64</td>
+                                                                <td style="text-align:center;">86</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.7%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 2 K.G</td>
+                                                                <td style="text-align:center;">60</td>
+                                                                <td style="text-align:center;">79</td>
+                                                                <td style="text-align:center;">91</td>
+                                                                <td style="text-align:center;">111</td>
+                                                                <td style="text-align:center;">137</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">1.5%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees 5 K.G</td>
+                                                                <td style="text-align:center;">114</td>
+                                                                <td style="text-align:center;">136</td>
+                                                                <td style="text-align:center;">143</td>
+                                                                <td style="text-align:center;">161</td>
+                                                                <td style="text-align:center;">205</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">1.5%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees Air</td>
+                                                                <td style="text-align:center;">26</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">41</td>
+                                                                <td style="text-align:center;">44</td>
+                                                                <td style="text-align:center;">56</td>
+                                                                <td style="text-align:center;">33</td>
+                                                                <td style="text-align:center;">1.7%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center;">Xpressbees Surface</td>
+                                                                <td style="text-align:center;">25</td>
+                                                                <td style="text-align:center;">28</td>
+                                                                <td style="text-align:center;">36</td>
+                                                                <td style="text-align:center;">39</td>
+                                                                <td style="text-align:center;">47</td>
+                                                                <td style="text-align:center;">31</td>
+                                                                <td style="text-align:center;">1.9%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="text-right">*GST Additional</div>
+
+
+                                    </div>
+                                    <div class="col-sm-12 p-all-15 border-top m-t-15">
+                                        <p><b>Terms & Conditions:</b></p>
+                                        <ul>
+                                            <li>Above Shared Commercials are Exclusive GST.</li>
+                                            <li>Above pricing subject to change based on courier company updation or
+                                                change in any commercials.</li>
+                                            <li>Freight Weight is Picked - Volumetric or Dead weight whichever is higher
+                                                will be charged.</li>
+                                            <li>Return charges as same as Forward for currier's where special RTO
+                                                pricing is not shared.</li>
+                                            <li>Fixed COD charge or COD % of the order value whichever is higher.</li>
+                                            <li>Other charges like address correction charges if applicable shall be
+                                                charged extra.</li>
+                                            <li>Prohibited item not to be ship, if any penalty will charge to seller.
+                                            </li>
+                                            <li>Reverse Pickup charges is applicable 1.5 time extra as forwarding
+                                                charges</li>
+                                            <li>No Claim would be entertained for Glassware, Fragile products,</li>
+                                            <li>Concealed damages and improper packaging.</li>
+                                            <li>Any weight dispute due to incorrect weight declaration cannot be
+                                                claimed.</li>
+                                            <li>Chargeable weight would be volumetric or actual weight, whichever is
+                                                higher
+                                                <br />
+                                                (LxBxH/5000).
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal fade recharge_wallet_form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Upgrade Your Shipping Limit</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the amount for your recharge</p>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+                        <div class="col-sm-6">
+                            <input type="text" autocomplete="off" name="filter[order_ids]" class="form-control"
+                                required="" id="recharge_wallet_amount" placeholder="Enter Amount" value="500">
+                        </div>
+                        <div class="col-sm-12 text-center m-t-20">
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="500">500</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="1000">1000</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="2000">2000</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="5000">5000</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="10000">10000</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="inputPassword" class="text-right col-form-label">Payment Option</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <label>
+                                <input type="radio" name="recharge_option" value="razorpay" checked>
+                                <img src="img/razorpay.png" class="m-b-15 mr-2"
+                                    style="width:100px;border-color:#0c9;">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="recharge_option" value="paytm">
+                                <img src="img/paytm.png" class="m-b-15 mr-2"
+                                    style="width:100px;border-color:#0c9;">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="button" class="btn btn-primary recharge_wallet_button">Recharge</button>
+                        </div>
+                    </div>
+
+                    <form id="rzp_success_form" method="post"
+                        action="#">
+                        <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+                    </form>
+
+                    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+                    <script>
+                        function pay_razorpay(amount = 0, payment_id = false) {
+                            if (payment_id == '')
+                                return false;
+                            var options = {
+                                "key": "rzp_live_irALOJH2KE0dqk", // Enter the Key ID generated from the Dashboard
+                                "amount": amount * 100,
+                                "currency": "INR",
+                                "name": "Nimbuspost",
+                                "description": "Recharge wallet",
+                                "handler": rzp_response,
+                                "prefill": {
+                                    "name": "ashutosh bharti",
+                                    "email": "Corporate@aspriglobal.com",
+                                    "contact": "7007501941"
+                                },
+                                "notes": {
+                                    "payment_id": payment_id,
+                                },
+                                "theme": {
+                                    "color": "#12263f"
+                                }
+                            };
+                            var rzp1 = new Razorpay(options);
+                            rzp1.open();
+
+                        }
+
+                        function rzp_response(response) {
+                            document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
+                            document.getElementById('rzp_success_form').submit();
+                        }
+                    </script>
+                    <script type="application/javascript"
+                        src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/Nimbus12832343631361.js"
+                        crossorigin="anonymous"></script>
+
+                    <script>
+                        function pay_Paytm(txnToken, orderId, amount) {
+                            var config = {
+                                "root": "",
+                                "flow": "DEFAULT",
+                                "merchant": {
+                                    "name": "Nimbuspost Private Limited",
+                                    "logo": "img/nimbus.png"
+                                },
+                                "style": {
+                                    "headerBackgroundColor": "#8dd8ff",
+                                    "headerColor": "#3f3f40"
+                                },
+                                "data": {
+                                    "orderId": orderId,
+                                    /* update order id */
+                                    "token": txnToken,
+                                    /* update token value */
+                                    "tokenType": "TXN_TOKEN",
+                                    "amount": amount /* update amount */
+                                },
+                                "handler": {
+                                    "notifyMerchant": function (eventName, data) {
+                                        console.log("notifyMerchant handler function called");
+                                        console.log("eventName => ", eventName);
+                                        console.log("data => ", data);
+                                    }
+                                }
+                            };
+
+                            if (window.Paytm && window.Paytm.CheckoutJS) {
+                                // initialze configuration using init method
+                                window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
+                                    console.log('Before JS Checkout invoke');
+                                    // after successfully update configuration invoke checkoutjs
+                                    window.Paytm.CheckoutJS.invoke();
+                                }).catch(function onError(error) {
+                                    console.log("Error => ", error);
+                                });
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".adjust_wallet_from_remittance_popup"
+                        data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge from Remittance</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal"
+                        class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade adjust_wallet_from_remittance_popup" tabindex="-1" role="dialog"
+        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Recharge Wallet From COD Remittance</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="adjust_wallet_from_remittance_form">
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+                            <div class="col-sm-6">
+                                <input type="text" autocomplete="off" name="amount" class="form-control" required=""
+                                    id="remittance_recharge_amount" placeholder="Enter Amount" value="">
+                            </div>
+                            <div class="col-sm-12 m-t-10">
+                                <p><b>Note:</b> Nearest possible amount will be used for wallet recharge.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-primary ">Recharge</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_form" data-dismiss="modal"
+                        class="btn btn-outline-info btn-sm">Recharge Online</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal"
+                        class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade recharge_wallet_neft" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Make NEFT</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Make payment to below given account details</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <b>NEFT Bank Details</b><br />
+                            Nimbuspost Private Limited<br />
+                            Kotak Mahindra Bank<br />
+                            A/c <b>8413861638</b><br />
+                            <b>KKBK0000187</b><br />
+                            Saket New Delhi - 110017
+
+                        </div>
+                        <div class="col-sm-6">
+                            <form method="post" action="billing/neft_payment">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="amount" class="form-control"
+                                            placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">UTR Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="utr_number" class="form-control"
+                                            placeholder="Bank txn ref#">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade add_remove_tags" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="add_remove_tags">
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

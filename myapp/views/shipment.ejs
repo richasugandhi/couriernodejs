@@ -1,0 +1,258 @@
+<div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+    <div class="container">
+        <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+            <div class="col-md-12 m-auto text-white p-b-20">
+                &nbsp;
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid pull-up">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card m-b-30">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="m-b-0">
+                                <i class="mdi mdi-checkbox-intermediate"></i> Shippment
+                            </h4>
+                        </div>
+                        <div class="col-md-8 text-right">
+                            <a href="products-all.html" class="btn btn-outline-dark btn-sm"><i
+                                    class="mdi mdi-link-variant"></i> Products SKU Mapping</a>
+                            <a href="#" class="btn btn-outline-dark btn-sm"><i
+                                    class="mdi mdi-arrow-down-bold-circle"></i> Export</a>
+
+                            <button type="button"
+                                class="btn btn-sm btn-outline-dark refresh_orders_button"><i
+                                    class="mdi mdi-refresh"></i> Refresh</button>
+
+
+
+                            <button class="btn btn-outline-dark btn-sm" data-toggle="modal"
+                                data-target=".import_orders_modal"> <i
+                                    class="mdi mdi-arrow-up-bold-circle"></i> Import</button>
+
+                            <a href="order-create.html" class="btn btn-outline-dark btn-sm"> <i
+                                    class="mdi mdi-plus"></i>Create Order</a>
+
+                            <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm"><i
+                                    class="icon-placeholder mdi mdi-filter"></i> Filters
+                            </button>
+                            <button class="btn btn-sm btn-success"
+                                style="background:#12263f!important;border: 1px solid #12263F!important;"
+                                title="Process Bulk Orders" style="cursor: pointer;color: #A94442;"
+                                data-toggle="modal" data-target="#exampleModalprocessorders"><i
+                                    class="mdi mdi-comment-question"></i></button>
+
+                            <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm"
+                                style="display:none;"><i class="icon-placeholder mdi mdi-close"></i> Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="get" action="#">
+                        <div class="row m-b-10" id="filter_row" style="display:none;">
+                            <div class="col-sm-12">
+                                <div class="row m-b-10">
+                                    <div class="col-sm-3">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <label for="email">From Date:</label>
+                                                <input type="text" autocomplete="off"
+                                                    data-start-date="2021-06-04" data-end-date="2021-07-04"
+                                                    class="form-control date-range-picker col-sm-12">
+                                                <input type="hidden" autocomplete="off" id="date-min"
+                                                    name="filter[start_date]" value="2021-06-04"
+                                                    placeholder="from">
+                                                <input type="hidden" autocomplete="off" id="date-max"
+                                                    name="filter[end_date]" value="2021-07-04"
+                                                    placeholder="to">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <label for="email">Order ID(s):</label>
+                                        <input type="text" autocomplete="off" name="filter[order_ids]"
+                                            value="" class="form-control" placeholder="Seperted by comma">
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label for="email">Product Name:</label>
+                                        <input type="text" autocomplete="off" name="filter[product_name]"
+                                            value="" class="form-control"
+                                            placeholder="Product name to search">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="email"><span data-toggle="tooltip" data-html="true"
+                                                title=""
+                                                data-original-title="Search by Product or Customer Details">Search
+                                                Query:</span></label>
+                                        <input type="text" autocomplete="off" name="filter[search_query]"
+                                            value="" class="form-control" placeholder="Search Anything">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="email">Channel:</label>
+                                        <select name="filter[channel_id]" class="form-control js-select2"
+                                            style="width: 100% !important;">
+                                            <option value="">Select Channel</option>
+                                            <option value="custom">Custom Orders</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-2">
+                                        <label for="email">Type:</label>
+                                        <select name="filter[pay_method]" class="form-control">
+                                            <option selected value="">All</option>
+                                            <option value="cod">COD</option>
+                                            <option value="prepaid">Prepaid</option>
+                                            <option value="reverse">Reverse</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label for="email">IVR Verification:</label>
+                                        <select name="filter[ivr_status]" class="form-control">
+                                            <option selected value="">All</option>
+                                            <option value="confirm">Verified</option>
+                                            <option value="cancel">Cancelled</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-2">
+                                        <label for="email">Order Tag(s):</label>
+                                        <input type="text" autocomplete="off" name="filter[tags]" value=""
+                                            class="form-control" placeholder="Tag name here">
+                                    </div>
+
+                                    <div class="col-sm-3" style="margin-top:34px;">
+                                        <button type="submit" class="btn btn-sm btn-success">Apply</button>
+                                        <a href="#" class="btn btn-sm btn-primary">Clear</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+                    <div class="row border-top p-t-10 p-b-10 action_row_default">
+                        <div class="col-sm-10">
+                            <div class="btn-group " role="group">
+                                <a href="#" class="btn  btn-dark">All Orders</a>
+                                <a href="#" class="btn btn-outline-dark">Not Shipped (0)</a>
+
+
+                                <a href="#" class="btn btn-outline-dark">Booked (0)</a>
+
+                                <a href="#" class="btn btn-outline-dark">Cancelled (0)</a>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-2 p-t-5 text-center">
+                            <a href="#" class="text-primary add_segment_button" data-segment-id=""
+                                style="text-decoration: none;" data-toggle="modal"
+                                data-target=".add_edit_segment_modal"><b><i class="mdi mdi-plus"></i> Add
+                                    Segment</b></a>
+                        </div>
+                    </div>
+                    <div class="row p-t-10 border-top  p-b-10 action_row_selected sticky-top border-bottom"
+                        style="display: none;">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text  border-dark"> <b
+                                            class="multiple_select_count">0</b>&nbsp;selected</span>
+                                </div>
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-outline-dark bulk-ship-button"
+                                        data-toggle="modal" data-target=".bd-example-modal-sm"><i
+                                            class="mdi mdi-package-variant-closed"></i> Bulk Ship</button>
+                                    <button type="button"
+                                        class="btn btn-outline-dark bulk-cancel-order-button"><i
+                                            class="mdi mdi-cancel text-danger"></i> Cancel</button>
+
+                                    <button class="btn btn-outline-dark dropdown-toggle" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <i class="mdi mdi-tag-multiple"></i> Tags
+                                    </button>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <button class="dropdown-item add_remove_tags_button"
+                                            data-toggle="modal" data-tag-action="orders/add"
+                                            data-target=".add_remove_tags">Add Tags</button>
+                                        <button class="dropdown-item add_remove_tags_button"
+                                            data-toggle="modal" data-tag-action="orders/remove"
+                                            data-target=".add_remove_tags">Remove Tags</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th><input data-switch="true" id="select_all_checkboxes"
+                                            type="checkbox"></th>
+                                    <th>Channel</th>
+                                    <th>Order</th>
+                                    <th>Date</th>
+                                    <th>Product</th>
+                                    <th>Payment</th>
+                                    <th>Method</th>
+                                    <th style="width: 10%;">Customer</th>
+                                    <th>Zip Code</th>
+                                    <th>Weight</th>
+                                    <th>IVR Status</th>
+                                    <th>Tags</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="12" class="text-center">No Records found</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1">
+                            <select name="per_page" class='form-control'>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50" selected="selected">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="500">500</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4">
+                            <div class="dataTables_info" id="example-multi_info" role="status"
+                                aria-live="polite">Showing 1 to 50 of 0 entries</div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <ul class="pagination" style="float: right;margin-right: -50px;">
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

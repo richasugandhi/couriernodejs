@@ -1,0 +1,51 @@
+<header class="admin-header">
+    <p><img src="/public/user/img/Nimbus_Logo.jpg" style="margin-left: 25px;margin-top: 10px;" width="100"
+            alt="Nimbus Logo"></p>
+    <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+    <nav class=" ml-auto">
+        <ul class="nav align-items-center">
+            <li class="nav-item m-t-20 m-r-50">
+                <form method="get" action="#">
+                    <div class="form-group input-group mb-3">
+                        <label style="margin-right: 5px;margin-top: 5px;">Search AWB:</label>
+                        <input type="text" class="form-control input-sm" autocomplete="off"
+                            name="filter[awb_no]" placeholder="AWB Number(s)" required>
+                        <input type="hidden" autocomplete="off" name="filter[start_date]" value="2019-01-01"
+                            placeholder="from">
+                        <input type="hidden" autocomplete="off" name="filter[end_date]" value="2021-08-12"
+                            placeholder="to">
+                        <div class="input-group-append"><button type="submit" class="btn btn-sm btn-dark"><span
+                                    class="mdi mdi-magnify" style="font-size: initial;"></span></button></div>
+
+                    </div>
+
+                </form>
+            </li>
+            <li class="nav-item">
+                <a href="pincode.html" class="btn btn-sm btn-info m-r-10"><i class="mdi mdi-download"></i>
+                    Serviceable pincodes list</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-sm btn-light">Balance &#8377;-212.04</button>
+            </li>
+            <li class="nav-item m-l-10">
+                <button class="btn btn-sm btn-success"
+                    style="background:#12263f!important;border: 1px solid #12263f!important;"
+                    data-toggle="modal" data-target=".recharge_wallet_form"><i class="mdi mdi-flash"></i>
+                    Recharge</button>
+            </li>
+            <li class="nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                    ashutosh bharti </a>
+                <div class="dropdown-menu  dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="setting.html">Settings</a>
+                    <!--<a class="dropdown-item" href="#">Customer Support</a>-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="user.html"> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>

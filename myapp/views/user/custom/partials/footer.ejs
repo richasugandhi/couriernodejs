@@ -1,0 +1,170 @@
+<div class="modal fade recharge_wallet_form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content" id="fulfillment_info">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mySmallModalLabel">Upgrade Your Shipping Limit</h5>
+            </div>
+            <div class="modal-body">
+                <p>Enter the amount for your recharge</p>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+                    <div class="col-sm-6">
+                        <input type="text" autocomplete="off" name="filter[order_ids]" class="form-control"
+                            required="" id="recharge_wallet_amount" placeholder="Enter Amount" value="500">
+                    </div>
+                    <div class="col-sm-12 text-center m-t-20">
+                        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                            data-amount="500">500</button>
+                        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                            data-amount="1000">1000</button>
+                        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                            data-amount="2000">2000</button>
+                        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                            data-amount="5000">5000</button>
+                        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                            data-amount="10000">10000</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="inputPassword" class="text-right col-form-label">Payment Option</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <label>
+                            <input type="radio" name="recharge_option" value="razorpay" checked>
+                            <img src="/public/user/img/razorpay.png" class="m-b-15 mr-2"
+                                style="width:100px;border-color:#0c9;">
+                        </label>
+
+                        <label>
+                            <input type="radio" name="recharge_option" value="paytm">
+                            <img src="/public/user/img/paytm.png" class="m-b-15 mr-2"
+                                style="width:100px;border-color:#0c9;">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button type="button" class="btn btn-primary recharge_wallet_button">Recharge</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" data-toggle="modal" data-target=".adjust_wallet_from_remittance_popup"
+                    data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge from Remittance</button>
+                <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal"
+                    class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade adjust_wallet_from_remittance_popup" tabindex="-1" role="dialog"
+    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content" id="fulfillment_info">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mySmallModalLabel">Recharge Wallet From COD Remittance</h5>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="adjust_wallet_from_remittance_form">
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+                        <div class="col-sm-6">
+                            <input type="text" autocomplete="off" name="amount" class="form-control" required=""
+                                id="remittance_recharge_amount" placeholder="Enter Amount" value="">
+                        </div>
+                        <div class="col-sm-12 m-t-10">
+                            <p><b>Note:</b> Nearest possible amount will be used for wallet recharge.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" class="btn btn-primary ">Recharge</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" data-toggle="modal" data-target=".recharge_wallet_form" data-dismiss="modal"
+                    class="btn btn-outline-info btn-sm">Recharge Online</button>
+                <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal"
+                    class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="modal fade recharge_wallet_neft" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content" id="fulfillment_info">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mySmallModalLabel">Make NEFT</h5>
+            </div>
+            <div class="modal-body">
+                <p>Make payment to below given account details</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <b>NEFT Bank Details</b><br />
+                        Nimbuspost Private Limited<br />
+                        Kotak Mahindra Bank<br />
+                        A/c <b>8413861638</b><br />
+                        <b>KKBK0000187</b><br />
+                        Saket New Delhi - 110017
+
+                    </div>
+                    <div class="col-sm-6">
+                        <form method="post" action="billing/neft_payment">
+                            <div class="form-group row">
+                                <label for="exampleInputEmail1" class="col-sm-4 col-form-label">Amount</label>
+                                <div class="col-sm-8">
+                                    <input type="text" required="" name="amount" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputEmail1" class="col-sm-4 col-form-label">UTR Number</label>
+                                <div class="col-sm-8">
+                                    <input type="text" required="" name="utr_number" class="form-control"
+                                        placeholder="Bank txn ref#">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade add_remove_tags" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content" id="add_remove_tags">
+
+        </div>
+    </div>
+</div>
+
+<script src="/public/user/js/Chart.bundle.min.js"></script>
+<script src="/public/user/js/chartjs-data.js"></script>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nimbus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body class="pace-done">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK53LP4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-brand">
+            <p><img src="img/Nimbus_Logo.jpg" width="100" alt="Nimbus Logo"></p>
+            <div class="ml-auto">
+                <!--<a href="#" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle pinned"></a>
+                    <a href="#" class="admin-close-sidebar"></a>-->
+            </div>
+        </div>
+        <div class="admin-sidebar-wrapper js-scrollbar">
+            <ul class="menu">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Dashboard</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-view-dashboard"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                                    <li class="menu-item ">
+                        <a href="order.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Orders</span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-package-variant-closed"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="shipment.html"class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Shipments
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-truck-fast"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="ndr.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Exception
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-shield-remove"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="weightreconciliation.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Weight Reco.
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-weight-kilogram"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                
+                                                            <li class="menu-item ">
+                            <a href="new-billing.html" class="menu-link">
+                                <span class="menu-label">
+                                    <span class="menu-name">Billing
+                                    </span>
+                                </span>
+                                <span class="menu-icon">
+                                    <i class="mdi mdi-cash"></i>
+                                </span>
+                            </a>
+                            <!--submenu-->
+                        </li>
+                                                                        <li class="menu-item ">
+                        <a href="reports.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Reports
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-file-document"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                <li class="menu-item ">
+                    <a href="operation.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Control Tower
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-desktop-tower"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="escalations.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Escalations
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-message-text-outline"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                
+
+                                    <li class="menu-item ">
+                        <a href="apps.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Addons
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-apps"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                
+
+                <li class="menu-item ">
+                    <a href="setting-main.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Settings
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-settings"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                
+
+                    <li class="menu-item ">
+                        <a href="escalations_new.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Support
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-help"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+
+                
+
+            </ul>
+        </div>
+    </aside>
+    <main class="admin-main">
+        <!--site header begins-->
+        <header class="admin-header">
+            <p><img src="img/Nimbus_Logo.jpg" style="margin-left: 25px;margin-top: 10px;" width="100" alt="Nimbus Logo"></p>
+            <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+            <nav class=" ml-auto">
+                <ul class="nav align-items-center">
+                    <li class="nav-item m-t-20 m-r-50">
+                        <form method="get" action="#">
+                            <div class="form-group input-group mb-3">
+                                <label style="margin-right: 5px;margin-top: 5px;">Search AWB:</label>
+                                <input type="text" class="form-control input-sm" autocomplete="off" name="filter[awb_no]" placeholder="AWB Number(s)" required>
+                                <input type="hidden" autocomplete="off" name="filter[start_date]" value="2019-01-01" placeholder="from">
+                                <input type="hidden" autocomplete="off" name="filter[end_date]" value="2021-08-12" placeholder="to">
+                                <div class="input-group-append"><button type="submit" class="btn btn-sm btn-dark"><span class="mdi mdi-magnify" style="font-size: initial;"></span></button></div>
+
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pincode.html" class="btn btn-sm btn-info m-r-10"><i class="mdi mdi-download"></i> Serviceable pincodes list</a>
+                    </li>
+                                            <li class="nav-item">
+                            <button class="btn btn-sm btn-light">Balance &#8377;-212.04</button>
+                        </li>
+                        <li class="nav-item m-l-10">
+                            <button class="btn btn-sm btn-success" style="background:#12263f!important;border: 1px solid #12263f!important;" data-toggle="modal" data-target=".recharge_wallet_form"><i class="mdi mdi-flash"></i> Recharge</button>
+                        </li>
+                                        <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            ashutosh bharti                        </a>
+                        <div class="dropdown-menu  dropdown-menu-right">
+                                                            <a class="dropdown-item" href="profile.html">Profile</a>
+                                                        <a class="dropdown-item" href="setting.html">Settings</a>
+                            <!--<a class="dropdown-item" href="#">Customer Support</a>-->
+                            <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="user.html"> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+                <section class="admin-content">
+            <div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+                <div class="container">
+                    <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                        <div class="col-md-12 m-auto text-white p-b-20">
+                            &nbsp;
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pull-up">
+                <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row m-b-10">
+                        <div class="col-md-6 my-auto">
+                            <h4 class="m-0">Escalations</h4>
+                        </div>
+                        <div class="col-md-6 text-right my-auto">
+                            <a href="escalations_new.html" class="btn btn-info btn-sm"><i class="mdi mdi-plus"></i> New Escalation</a>
+                            <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm" ><i class="icon-placeholder mdi mdi-filter"></i> Filters</button>
+                            <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm"  style="display:none;" ><i class="icon-placeholder mdi mdi-close"></i> Close</button>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <form method="get" action="https://ship.nimbuspost.com/escalations/all">
+                                <div class="row" id="filter_row"  style="display:none;" >
+                                    <div class="col-sm-12">
+
+                                        <div class="form-row">
+                                            <div class="col-sm-2">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <label for="email">From Date:</label>
+                                                        <input type="text" autocomplete="off" data-start-date="2021-07-13" data-end-date="2021-08-12" class="form-control date-range-picker col-sm-12">
+                                                        <input type="hidden" autocomplete="off" id="date-min" name="filter[start_date]" value="2021-07-13" placeholder="from">
+                                                        <input type="hidden" autocomplete="off" id="date-max" name="filter[end_date]" value="2021-08-12" placeholder="to">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-sm-2" style="margin-top:2px;">
+                                                <label for="email">Escalation ID:</label>
+                                                <input type="text" name="filter[escalation_id]" value="" class="form-control" placeholder="Comma Separated">
+                                            </div>
+
+                                            <div class="form-group col-sm-2" style="margin-top:2px;">
+                                                <label for="email">AWB Numbers:</label>
+                                                <input type="text" name="filter[awb_number]" value="" class="form-control" placeholder="Comma Separated">
+                                            </div>
+
+                                            <div class="form-group col-sm-2" style="margin-top:2px;">
+                                                <label for="email">Type:</label>
+                                                <select name="filter[type]" class='form-control'>
+<option value="" selected="selected">All</option>
+<option value="pickup">Pickups</option>
+<option value="shipment|proof of delivery">Shipment - Proof of Delivery</option>
+<option value="shipment|re-attempt">Shipment - Re-attempt</option>
+<option value="shipment|self collect - branch address required">Shipment - Self Collect - Branch Address Required</option>
+<option value="shipment|forward stuck in transit">Shipment - Forward Stuck in Transit</option>
+<option value="shipment|rto stuck in transit">Shipment - RTO Stuck in Transit</option>
+<option value="shipment|forward delivery dispute">Shipment - Forward Delivery Dispute</option>
+<option value="shipment|rto delivery dispute">Shipment - RTO Delivery Dispute</option>
+<option value="shipment|hold shipment">Shipment - Hold Shipment</option>
+<option value="shipment|rto instruction">Shipment - RTO Instruction</option>
+<option value="shipment|change payment type">Shipment - Change Payment Type - COD/Prepaid</option>
+<option value="shipment|reverse pickup delivery issue">Shipment - Reverse Pickup Delivery Issue</option>
+<option value="shipment|status mismatch">Shipment - Status Mismatch</option>
+<option value="shipment|other">Shipment - Other</option>
+<option value="shipment|re-attempt - fake remarks">Shipment - Re-attempt - Fake Remarks (Deleted)</option>
+<option value="shipment|urgent delivery">Shipment - Urgent Delivery (Deleted)</option>
+<option value="shipment|stuck in transit">Shipment - Stuck in Transit (Deleted)</option>
+<option value="shipment|lost or damaged">Shipment - Lost or Damaged (Deleted)</option>
+<option value="billing">Billing & Remittance</option>
+<option value="weight">Weight Disputes</option>
+<option value="tech">Tech Issues</option>
+<option value="callback">Callback Request</option>
+</select>
+                                            </div>
+                                            <div class="form-group col-sm-2" style="margin-top:2px;">
+                                                <label for="email">Status:</label>
+                                                <select name="filter[status]" class='form-control'>
+<option value="" selected="selected">All</option>
+<option value="new">New</option>
+<option value="assigned">Assigned</option>
+<option value="escalated to courier">Escalated to courier</option>
+<option value="pending from seller">Pending from seller</option>
+<option value="cancelled">Cancelled</option>
+<option value="closed">Closed</option>
+</select>
+                                            </div>
+                                            <div class="form-group col-sm-2" style="margin-top:32px;">
+                                                <button type="submit" class="btn btn-sm btn-primary">Apply</button>
+                                                <a href="https://ship.nimbuspost.com/escalations/all" class="btn btn-sm btn-default">Clear</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Escalation Type</th>
+                                            <th scope="col">Details</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                            </tbody>
+                                </table>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="dataTables_info" id="example-multi_info" role="status" aria-live="polite">Showing 1 to 50 of 0 entries</div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <ul class="pagination" style="float: right;
+                            margin-right: 0px;">
+                                                                                                                                                                </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            </div>
+        </section>
+    </main>
+    <div class="modal fade recharge_wallet_form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Upgrade Your Shipping Limit</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the amount for your recharge</p>
+<div class="form-group row">
+    <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+    <div class="col-sm-6">
+        <input type="text" autocomplete="off" name="filter[order_ids]" class="form-control" required="" id="recharge_wallet_amount" placeholder="Enter Amount" value="500">
+    </div>
+    <div class="col-sm-12 text-center m-t-20">
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="500">500</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="1000">1000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="2000">2000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="5000">5000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="10000">10000</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <label for="inputPassword" class="text-right col-form-label">Payment Option</label>
+    </div>
+    <div class="col-sm-8">
+        <label>
+            <input type="radio" name="recharge_option" value="razorpay" checked >
+            <img src="img/razorpay.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+        </label>
+
+        <label>
+            <input type="radio" name="recharge_option" value="paytm">
+            <img src="img/paytm.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <button type="button" class="btn btn-primary recharge_wallet_button">Recharge</button>
+    </div>
+</div>
+
+<form id="rzp_success_form" method="post" action="#">
+    <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+</form>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+    function pay_razorpay(amount = 0, payment_id = false) {
+        if (payment_id == '')
+            return false;
+        var options = {
+            "key": "rzp_live_irALOJH2KE0dqk", // Enter the Key ID generated from the Dashboard
+            "amount": amount * 100,
+            "currency": "INR",
+            "name": "Nimbuspost",
+            "description": "Recharge wallet",
+            "handler": rzp_response,
+            "prefill": {
+                "name": "ashutosh bharti",
+                "email": "Corporate@aspriglobal.com",
+                "contact": "7007501941"
+            },
+            "notes": {
+                "payment_id": payment_id,
+            },
+            "theme": {
+                "color": "#12263f"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+
+    }
+
+    function rzp_response(response) {
+        document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
+        document.getElementById('rzp_success_form').submit();
+    }
+</script>
+<script type="application/javascript" src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/Nimbus12832343631361.js" crossorigin="anonymous"></script>
+
+<script>
+    function pay_Paytm(txnToken, orderId, amount) {
+        var config = {
+            "root": "",
+            "flow": "DEFAULT",
+            "merchant": {
+                "name": "Nimbuspost Private Limited",
+                "logo": "img/nimbus.png"
+            },
+            "style": {
+                "headerBackgroundColor": "#8dd8ff",
+                "headerColor": "#3f3f40"
+            },
+            "data": {
+                "orderId": orderId,
+                /* update order id */
+                "token": txnToken,
+                /* update token value */
+                "tokenType": "TXN_TOKEN",
+                "amount": amount /* update amount */
+            },
+            "handler": {
+                "notifyMerchant": function(eventName, data) {
+                    console.log("notifyMerchant handler function called");
+                    console.log("eventName => ", eventName);
+                    console.log("data => ", data);
+                }
+            }
+        };
+
+        if (window.Paytm && window.Paytm.CheckoutJS) {
+            // initialze configuration using init method
+            window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
+                console.log('Before JS Checkout invoke');
+                // after successfully update configuration invoke checkoutjs
+                window.Paytm.CheckoutJS.invoke();
+            }).catch(function onError(error) {
+                console.log("Error => ", error);
+            });
+        }
+    }
+</script>                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".adjust_wallet_from_remittance_popup" data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge from Remittance</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal" class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade adjust_wallet_from_remittance_popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Recharge Wallet From COD Remittance</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="adjust_wallet_from_remittance_form">
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+        <div class="col-sm-6">
+            <input type="text" autocomplete="off" name="amount" class="form-control" required="" id="remittance_recharge_amount" placeholder="Enter Amount" value="">
+        </div>
+        <div class="col-sm-12 m-t-10">
+            <p><b>Note:</b> Nearest possible amount will be used for wallet recharge.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-primary ">Recharge</button>
+        </div>
+    </div>
+</form>                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_form" data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge Online</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal" class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade recharge_wallet_neft" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Make NEFT</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Make payment to below given account details</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <b>NEFT Bank Details</b><br />
+                            Nimbuspost Private Limited<br />
+                            Kotak Mahindra Bank<br />
+                            A/c <b>8413861638</b><br />
+                            <b>KKBK0000187</b><br />
+                            Saket New Delhi - 110017
+
+                        </div>
+                        <div class="col-sm-6">
+                            <form method="post" action="billing/neft_payment">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="amount" class="form-control" placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">UTR Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="utr_number" class="form-control" placeholder="Bank txn ref#">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade add_remove_tags" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="add_remove_tags">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nimbus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="pace-done">
+
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-brand">
+            <p><img src="img/" style="margin-left: 25px;margin-top: 10px;" width="100" alt="Logo">
+            </p>
+
+        </div>
+        <div class="admin-sidebar-wrapper js-scrollbar">
+            <ul class="menu">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Dashboard</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-view-dashboard"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                <li class="menu-item ">
+                    <a href="#" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Orders</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-package-variant-closed"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                   <a href="shipment.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Shipments
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-truck-fast"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="ndr.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Exception
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-shield-remove"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="weightreconciliation.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Weight Reco.
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-weight-kilogram"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+                <li class="menu-item ">
+                    <a href="new-billing.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Billing
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-cash"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="reports.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Reports
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-file-document"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="#" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Control Tower
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-desktop-tower"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                    <a href="#" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Escalations
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-message-text-outline"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                <li class="menu-item ">
+                    <a href="#" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Addons
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-apps"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                <li class="menu-item ">
+                    <a href="#" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Settings
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-settings"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+
+
+                <li class="menu-item ">
+                    <a href="#" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Support
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-help"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+
+            </ul>
+        </div>
+    </aside>
+    <main class="admin-main">
+        <!--site header begins-->
+        <header class="admin-header">
+            <p> <img src="img/" style="margin-left: 25px;margin-top: 10px;" width="100" alt="Logo">
+            </p>
+            <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+            <nav class=" ml-auto">
+                <ul class="nav align-items-center">
+                    <li class="nav-item m-t-20 m-r-50">
+                        <form method="get" action="#">
+                            <div class="form-group input-group mb-3">
+                                <label style="margin-right: 5px;margin-top: 5px;">Search AWB:</label>
+                                <input type="text" class="form-control input-sm" autocomplete="off"
+                                    name="filter[awb_no]" placeholder="AWB Number(s)" required>
+                                <input type="hidden" autocomplete="off" name="filter[start_date]" value="2019-01-01"
+                                    placeholder="from">
+                                <input type="hidden" autocomplete="off" name="filter[end_date]" value="2021-08-06"
+                                    placeholder="to">
+                                <div class="input-group-append"><button type="submit" class="btn btn-sm btn-dark"><span
+                                            class="mdi mdi-magnify" style="font-size: initial;"></span></button></div>
+
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-sm btn-info m-r-10"><i class="mdi mdi-download"></i>
+                            Serviceable pincodes list</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-light">Balance &#8377;-212.04</button>
+                    </li>
+                    <li class="nav-item m-l-10">
+                        <button class="btn btn-sm btn-success"
+                            style="background:#12263f!important;border: 1px solid #12263f!important;"
+                            data-toggle="modal" data-target=".recharge_wallet_form"><i class="mdi mdi-flash"></i>
+                            Recharge</button>
+                    </li>
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            ashutosh bharti </a>
+                        <div class="dropdown-menu  dropdown-menu-right">
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="setting.html">Settings</a>
+                            <!--<a class="dropdown-item" href="#">Customer Support</a>-->
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="user.html"> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <section class="admin-content">
+            <div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+                <div class="container">
+                    <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                        <div class="col-md-12 m-auto text-white p-b-20">
+                            &nbsp;
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pull-up">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h4 class="m-b-0">
+                                            <i class="mdi mdi-weight-kilogram"></i> Weight Reconciliation
+                                        </h4>
+                                    </div>
+                                    <div class="col-sm-4 text-right">
+                                        <a href="#" class="btn btn-outline-dark btn-sm"><i
+                                                class="mdi mdi-arrow-down-bold-circle"></i> Export</a>
+
+                                        <button class="btn btn-outline-dark btn-sm" data-toggle="modal"
+                                            data-target=".import_ndr_modal"> <i
+                                                class="mdi mdi-arrow-up-bold-circle"></i> CSV Update</button>
+
+                                        <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm"><i
+                                                class="icon-placeholder mdi mdi-filter"></i> Filters</button>
+                                        <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm"
+                                            style="display:none;"><i class="icon-placeholder mdi mdi-close"></i>
+                                            Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form method="get" action="#">
+                                    <div class="row m-b-10" id="filter_row" style="display:none;">
+                                        <div class="col-sm-12">
+                                            <div class="row m-b-10">
+                                                <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="email">From Date:</label>
+                                                                    <input type="text" autocomplete="off"
+                                                                        data-start-date="2021-07-07"
+                                                                        data-end-date="2021-08-06"
+                                                                        class="form-control date-range-picker col-sm-12">
+                                                                    <input type="hidden" autocomplete="off"
+                                                                        id="date-min" name="filter[start_date]"
+                                                                        value="2021-07-07" placeholder="from">
+                                                                    <input type="hidden" autocomplete="off"
+                                                                        id="date-max" name="filter[end_date]"
+                                                                        value="2021-08-06" placeholder="to">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-sm-3" style="margin-top:2px;">
+                                                            <label for="email">Order ID(s):</label>
+                                                            <input type="text" autocomplete="off"
+                                                                name="filter[order_ids]" value="" class="form-control"
+                                                                placeholder="Enter order ids seperated by comma">
+                                                        </div>
+                                                        <div class="form-group col-sm-3" style="margin-top:2px;">
+                                                            <label for="email">AWB NO(s):</label>
+                                                            <input type="text" autocomplete="off" name="filter[awb_no]"
+                                                                value="" class="form-control"
+                                                                placeholder="Enter AWB no(s) seperated by comma">
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label for="email">Method:</label>
+                                                            <select name="filter[pay_method]"
+                                                                class="form-control js-select2"
+                                                                style="width: 100% !important;">
+                                                                <option selected value="">All</option>
+                                                                <option value="cod">COD</option>
+                                                                <option value="prepaid">Prepaid</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label for="email">Courier:</label>
+                                                            <select name="filter[courier_id]"
+                                                                class="form-control js-select2"
+                                                                style="width: 100% !important;">
+                                                                <option value="">All</option>
+                                                                <option value="5">Bluedart Express</option>
+                                                                <option value="1">Delhivery Air</option>
+                                                                <option value="6">Delhivery Surface</option>
+                                                                <option value="13">Delhivery Surface 10 K.G</option>
+                                                                <option value="7">Delhivery Surface 2 K.G</option>
+                                                                <option value="35">Delhivery Surface 20 K.G</option>
+                                                                <option value="11">Delhivery Surface 5 K.G</option>
+                                                                <option value="8">DTDC Air</option>
+                                                                <option value="9">DTDC Surface</option>
+                                                                <option value="30">DTDC Surface 1 K.G</option>
+                                                                <option value="31">DTDC Surface 10 K.G</option>
+                                                                <option value="29">DTDC Surface 5 K.G</option>
+                                                                <option value="15">Ekart</option>
+                                                                <option value="25">Ekart 1 K.G</option>
+                                                                <option value="27">Ekart 2 K.G</option>
+                                                                <option value="28">Ekart 5 K.G</option>
+                                                                <option value="36">Gati 5 K.G</option>
+                                                                <option value="4">Shadowfax</option>
+                                                                <option value="32">Shadowfax 1 K.G</option>
+                                                                <option value="33">Shadowfax 2 K.G</option>
+                                                                <option value="34">Shadowfax 5 K.G</option>
+                                                                <option value="44">Udaan</option>
+                                                                <option value="42">Xpressbees 1 K.G</option>
+                                                                <option value="45">Xpressbees 2 K.G</option>
+                                                                <option value="46">Xpressbees 5 K.G</option>
+                                                                <option value="3">Xpressbees Air</option>
+                                                                <option value="14">Xpressbees Surface</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label for="email">Attempts:</label>
+                                                            <select name="filter[attempts]"
+                                                                class="form-control js-select2"
+                                                                style="width: 100% !important;">
+                                                                <option selected value="">All</option>
+                                                                <option value="1">Attempt 1</option>
+                                                                <option value="2">Attempt 2</option>
+                                                                <option value="3">Attempt 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <label for="email">Channel:</label>
+                                                            <select name="filter[channel_id]"
+                                                                class="form-control js-select2"
+                                                                style="width: 100% !important;">
+                                                                <option value="">Select Channel</option>
+                                                                <option value="custom">Custom Orders</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <label for="email">Tag(s):</label>
+                                                            <input type="text" autocomplete="off" name="filter[tags]"
+                                                                value="" class="form-control"
+                                                                placeholder="Tag name here">
+                                                        </div>
+                                                        <div class="col-sm-2" style="margin-top:27px;">
+                                                            <button type="submit"
+                                                                class="btn btn-sm btn-success">Apply</button>
+                                                            <a href="https://ship.nimbuspost.com/ndr"
+                                                                class="btn btn-sm btn-primary">Clear</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="row border-top p-t-10 action_row_default">
+                                    <div class="col-sm-2">
+                                        <a href="#" class="btn btn-block m-b-15 ml-2 mr-2 btn-sm  btn-info">Action
+                                            Required (0)</a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a href="#" class="btn btn-block m-b-15 ml-2 mr-2 btn-sm btn-default">Action
+                                            Requested (0)</a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a href="3" class="btn btn-block m-b-15 ml-2 mr-2 btn-sm btn-default">Delivered
+                                            (0)</a>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a href="#" class="btn btn-block m-b-15 ml-2 mr-2 btn-sm btn-default">RTO
+                                            (0)</a>
+                                    </div>
+                                </div>
+                                <div class="row p-t-10 border-top p-b-10 action_row_selected sticky-top border-bottom"
+                                    style="display: none;">
+                                    <div class="col-sm-12">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text  border-dark"> <b
+                                                        class="multiple_select_count">0</b>&nbsp;selected</span>
+                                            </div>
+                                            <div class="input-group-append">
+
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-sm fill_bulk_ndr"><i
+                                                        class="mdi mdi-package-variant-closed"></i> Bulk NDR</button>
+                                                <button class="btn btn-outline-dark dropdown-toggle" role="button"
+                                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="mdi mdi-tag-multiple"></i> Tags
+                                                </button>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <button class="dropdown-item add_remove_tags_button"
+                                                        data-toggle="modal" data-tag-action="ndr/add"
+                                                        data-target=".add_remove_tags">Add Tags</button>
+                                                    <button class="dropdown-item add_remove_tags_button"
+                                                        data-toggle="modal" data-tag-action="ndr/remove"
+                                                        data-target=".add_remove_tags">Remove Tags</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th><input data-switch="true" id="select_all_checkboxes"
+                                                        type="checkbox"></th>
+                                                <th>Channel</th>
+                                                <th>NDR Date</th>
+                                                <th>Order</th>
+
+                                                <th>Product</th>
+                                                <th>Payment</th>
+                                                <th>Customer</th>
+                                                <th>Carrier</th>
+                                                <th>Status</th>
+                                                <th>Tags</th>
+                                                <th>Exception Info</th>
+                                                <th>Action</th>
+                                                <th>IVR</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="text-center">No Records Found</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!--Remark Popup start here-->
+                                    <div class="modal fade modal-slide-right " id="ndr_submit_model" tabindex="-1"
+                                        role="dialog" aria-labelledby="slideRightModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document" style="width: 415px !important;">
+                                            <div class="modal-content" style="height:auto;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="slideRightModalLabel">NDR Submit Form
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form method="post" action="#" id="ndr_submit_form">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="card-body">
+                                                                    <div class="form-group">
+                                                                        <input type="hidden" id="ndr_id" value=""
+                                                                            name="ndr_id">
+                                                                        <select name="action"
+                                                                            class="form-control ndr_action_change">
+                                                                            <option value="">Choose Action</option>
+                                                                            <option value="re-attempt">Re-Attempt
+                                                                            </option>
+                                                                            <option value="change address">Change
+                                                                                Address</option>
+                                                                            <option value="change phone">Change Phone
+                                                                                Number</option>
+                                                                            <option value="rto">RTO</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group ndr_action_change_fields ndr_action_change_field_reattempt"
+                                                                        style="display: none;">
+                                                                        <label>Re-Attempt Date</label>
+                                                                        <select class="form-control"
+                                                                            name="re_attempt_date">
+                                                                            <option value="">Choose Date</option>
+                                                                            <option value="1628360999">07 Aug (Sat)
+                                                                            </option>
+                                                                            <option value="1628447399">08 Aug (Sun)
+                                                                            </option>
+                                                                            <option value="1628533799">09 Aug (Mon)
+                                                                            </option>
+                                                                            <option value="1628620199">10 Aug (Tue)
+                                                                            </option>
+                                                                            <option value="1628706599">11 Aug (Wed)
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+
+                                                                    <div class="form-group ndr_action_change_fields ndr_action_change_field_customer_details"
+                                                                        style="display: none;">
+                                                                        <label>Customer Name</label>
+                                                                        <input class="form-control" type="text" value=""
+                                                                            name="customer_details_name">
+                                                                    </div>
+                                                                    <div class="form-group ndr_action_change_fields ndr_action_change_field_customer_details"
+                                                                        style="display: none;">
+                                                                        <label>Customer Address 1</label>
+                                                                        <input class="form-control" type="text" value=""
+                                                                            name="customer_details_address_1">
+                                                                    </div>
+                                                                    <div class="form-group ndr_action_change_fields ndr_action_change_field_customer_details"
+                                                                        style="display: none;">
+                                                                        <label>Customer Address 2</label>
+                                                                        <input class="form-control" type="text" value=""
+                                                                            name="customer_details_address_2">
+                                                                    </div>
+                                                                    <div class="form-group ndr_action_change_fields ndr_action_change_field_customer_contact"
+                                                                        style="display: none;">
+                                                                        <label>Phone Number</label>
+                                                                        <input class="form-control" type="text" value=""
+                                                                            name="customer_contact_phone">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Remark <small>(optional - Will not be
+                                                                                shared with courier
+                                                                                partner)</small></label>
+                                                                        <textarea class="form-control" name="remarks"
+                                                                            placeholder="Enter Remark"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="submit"
+                                                                        class="btn btn-primary">Submit</button>
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">
+                                                                        Close
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <select name="per_page" class='form-control'
+                                            onchange='per_page_records(this.value)'>
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="50" selected="selected">50</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200</option>
+                                            <option value="500">500</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="dataTables_info" id="example-multi_info" role="status"
+                                            aria-live="polite">Showing 1 to 50 of 0 entries</div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6">
+                                        <ul class="pagination" style="float: right;margin-right: -50px;">
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade import_ndr_modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                        <div class="modal-content">
+                            <form method="post" action="#" enctype="multipart/form-data">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="mySmallModalLabel">Bulk NDR Update</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <div class="col-sm-12 p-all-15">
+                                            <div class="card">
+                                                <div class="card-body bg-info text-center text-white">NDR file format
+                                                    has been changed. Please follow the below given instruction.</div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-12 p-b-10">
+                                            Export NDR and upload same file after updates.
+                                        </div>
+                                        <div class="col-sm-12 m-t-10">
+                                            <div class="m-b-10">
+                                                <div class="input-group mb-3">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" name="importFile">
+                                                        <label class="custom-file-label" for="inputGroupFile02">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-right">
+                                            <button type="submit" class="btn btn-primary">Upload</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-top m-t-20">
+                                        <div class="col-sm-12 p-t-10 text-center">
+                                            <b>How to use</b>
+                                        </div>
+                                        <div class="col-sm-12 p-t-10">
+                                            <ul>
+                                                <li>
+                                                    Export NDR using the export option given on this page.</li>
+                                                <li>
+                                                    Mention your NDR action in "Seller Action". Valid Values for Seller
+                                                    Action are <b>Re-Attempt</b>, <b>Change Phone</b>, <b>Change
+                                                        Address</b>, <b>RTO</b> </li>
+                                                <li>
+                                                    Depending on Seller action following fields are required:
+                                                    <br /><br />
+                                                    <b>Change Phone:</b>
+                                                    <ul>
+                                                        <li>Change Phone</li>
+                                                    </ul>
+                                                    <b>Change Address:</b>
+                                                    <ul>
+                                                        <li>Change Name</li>
+                                                        <li>Change Address 1</li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade make_ivr_call_modal" tabindex="-1" role="dialog"
+                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                        <div class="modal-content" id="ivr_call_modal">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade ivr_history_modal" tabindex="-1" role="dialog"
+                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content" id="ivr_history_data">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+
+                    function per_page_records(per_page = false) {
+                        var page_url = 'https://ship.nimbuspost.com/ndr/index?&perPage=' + per_page;
+                        window.location.href = page_url;
+                    }
+
+                    $('.make_ivr_call').on('click', function (e) {
+                        e.preventDefault();
+                        var ndr_id = $(this).attr('data-ndr-id');
+                        $.ajax({
+                            url: 'apps/ivrcalls/call_ndr',
+                            type: "POST",
+                            data: {
+                                ndr_id: ndr_id,
+                            },
+                            cache: false,
+                            success: function (data) {
+                                $('#ivr_call_modal').html(data);
+
+                            }
+                        });
+                    });
+
+                    $('.view_ivr_history').on('click', function (e) {
+                        e.preventDefault();
+                        var ndr_id = $(this).attr('data-ndr-id');
+                        $.ajax({
+                            url: 'apps/ivrcalls/ndr_history',
+                            type: "POST",
+                            data: {
+                                ndr_id: ndr_id,
+                            },
+                            cache: false,
+                            success: function (data) {
+                                $('#ivr_history_data').html(data);
+
+                            }
+                        });
+                    });
+
+                    $('.ndr_action_change').on('change', function () {
+                        var ndr_action = $(this).val();
+                        $(".ndr_action_change_fields").hide();
+                        switch (ndr_action) {
+                            case 're-attempt':
+                                $(".ndr_action_change_field_reattempt").show();
+                                break;
+                            case 'change address':
+                                $(".ndr_action_change_field_customer_details").show();
+                                break;
+                            case 'change phone':
+                                $(".ndr_action_change_field_customer_contact").show();
+                                break;
+                            default:
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+    </main>
+    <div class="modal fade recharge_wallet_form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Upgrade Your Shipping Limit</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the amount for your recharge</p>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+                        <div class="col-sm-6">
+                            <input type="text" autocomplete="off" name="filter[order_ids]" class="form-control"
+                                required="" id="recharge_wallet_amount" placeholder="Enter Amount" value="500">
+                        </div>
+                        <div class="col-sm-12 text-center m-t-20">
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="500">500</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="1000">1000</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="2000">2000</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="5000">5000</button>
+                            <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount"
+                                data-amount="10000">10000</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="inputPassword" class="text-right col-form-label">Payment Option</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <label>
+                                <input type="radio" name="recharge_option" value="razorpay" checked>
+                                <img src="img/razorpay.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="recharge_option" value="paytm">
+                                <img src="img/paytm.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="button" class="btn btn-primary recharge_wallet_button">Recharge</button>
+                        </div>
+                    </div>
+
+                    <form id="rzp_success_form" method="post" action="#">
+                        <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+                    </form>
+
+                    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+                    <script>
+                        function pay_razorpay(amount = 0, payment_id = false) {
+                            if (payment_id == '')
+                                return false;
+                            var options = {
+                                "key": "rzp_live_irALOJH2KE0dqk", // Enter the Key ID generated from the Dashboard
+                                "amount": amount * 100,
+                                "currency": "INR",
+                                "name": "Nimbuspost",
+                                "description": "Recharge wallet",
+                                "handler": rzp_response,
+                                "prefill": {
+                                    "name": "ashutosh bharti",
+                                    "email": "Corporate@aspriglobal.com",
+                                    "contact": "7007501941"
+                                },
+                                "notes": {
+                                    "payment_id": payment_id,
+                                },
+                                "theme": {
+                                    "color": "#12263f"
+                                }
+                            };
+                            var rzp1 = new Razorpay(options);
+                            rzp1.open();
+
+                        }
+
+                        function rzp_response(response) {
+                            document.getElementById('razorpay_payment_id').value = response.razorpay_payment_id;
+                            document.getElementById('rzp_success_form').submit();
+                        }
+                    </script>
+                    <script type="application/javascript"
+                        src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/Nimbus12832343631361.js"
+                        crossorigin="anonymous"></script>
+
+                    <script>
+                        function pay_Paytm(txnToken, orderId, amount) {
+                            var config = {
+                                "root": "",
+                                "flow": "DEFAULT",
+                                "merchant": {
+                                    "name": "Nimbuspost Private Limited",
+                                    "logo": "img/nimbus.png"
+                                },
+                                "style": {
+                                    "headerBackgroundColor": "#8dd8ff",
+                                    "headerColor": "#3f3f40"
+                                },
+                                "data": {
+                                    "orderId": orderId,
+                                    /* update order id */
+                                    "token": txnToken,
+                                    /* update token value */
+                                    "tokenType": "TXN_TOKEN",
+                                    "amount": amount /* update amount */
+                                },
+                                "handler": {
+                                    "notifyMerchant": function (eventName, data) {
+                                        console.log("notifyMerchant handler function called");
+                                        console.log("eventName => ", eventName);
+                                        console.log("data => ", data);
+                                    }
+                                }
+                            };
+
+                            if (window.Paytm && window.Paytm.CheckoutJS) {
+                                // initialze configuration using init method
+                                window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
+                                    console.log('Before JS Checkout invoke');
+                                    // after successfully update configuration invoke checkoutjs
+                                    window.Paytm.CheckoutJS.invoke();
+                                }).catch(function onError(error) {
+                                    console.log("Error => ", error);
+                                });
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".adjust_wallet_from_remittance_popup"
+                        data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge from Remittance</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal"
+                        class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade adjust_wallet_from_remittance_popup" tabindex="-1" role="dialog"
+        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Recharge Wallet From COD Remittance</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="adjust_wallet_from_remittance_form">
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+                            <div class="col-sm-6">
+                                <input type="text" autocomplete="off" name="amount" class="form-control" required=""
+                                    id="remittance_recharge_amount" placeholder="Enter Amount" value="">
+                            </div>
+                            <div class="col-sm-12 m-t-10">
+                                <p><b>Note:</b> Nearest possible amount will be used for wallet recharge.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-primary ">Recharge</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_form" data-dismiss="modal"
+                        class="btn btn-outline-info btn-sm">Recharge Online</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal"
+                        class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade recharge_wallet_neft" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Make NEFT</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Make payment to below given account details</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <b>NEFT Bank Details</b><br />
+                            Nimbuspost Private Limited<br />
+                            Kotak Mahindra Bank<br />
+                            A/c <b>8413861638</b><br />
+                            <b>KKBK0000187</b><br />
+                            Saket New Delhi - 110017
+
+                        </div>
+                        <div class="col-sm-6">
+                            <form method="post" action="billing/neft_payment">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="amount" class="form-control"
+                                            placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">UTR Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="utr_number" class="form-control"
+                                            placeholder="Bank txn ref#">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</html>

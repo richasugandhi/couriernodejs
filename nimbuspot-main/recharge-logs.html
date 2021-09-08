@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nimbus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body class="pace-done">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK53LP4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-brand">
+            <p><img src="img/Nimbus_Logo.jpg" width="100" alt="Nimbus Logo"></p>
+            <div class="ml-auto">
+                <!--<a href="#" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle pinned"></a>
+                    <a href="#" class="admin-close-sidebar"></a>-->
+            </div>
+        </div>
+        <div class="admin-sidebar-wrapper js-scrollbar">
+            <ul class="menu">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Dashboard</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-view-dashboard"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                                    <li class="menu-item ">
+                        <a href="order.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Orders</span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-package-variant-closed"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="all-shipment.html"class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Shipments
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-truck-fast"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="ndr.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Exception
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-shield-remove"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="weightreconciliation.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Weight Reco.
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-weight-kilogram"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                
+                                                            <li class="menu-item ">
+                            <a href="new-billing.html" class="menu-link">
+                                <span class="menu-label">
+                                    <span class="menu-name">Billing
+                                    </span>
+                                </span>
+                                <span class="menu-icon">
+                                    <i class="mdi mdi-cash"></i>
+                                </span>
+                            </a>
+                            <!--submenu-->
+                        </li>
+                                                                        <li class="menu-item ">
+                      <a href="reports.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Reports
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-file-document"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                <li class="menu-item ">
+                   <a href="operation.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Control Tower
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-desktop-tower"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                   <a href="escalations.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Escalations
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-message-text-outline"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                
+
+                                    <li class="menu-item ">
+                        <a href="apps.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Addons
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-apps"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                
+
+                <li class="menu-item ">
+                    <a href="setting-main.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Settings
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-settings"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                
+
+                    <li class="menu-item ">
+                        <a href="escalations_new.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Support
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-help"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+
+                
+
+            </ul>
+        </div>
+    </aside>
+    <main class="admin-main">
+        <!--site header begins-->
+        <header class="admin-header">
+            <p><img src="img/Nimbus_Logo.jpg" style="margin-left: 25px;margin-top: 10px;" width="100" alt="Nimbus Logo"></p>
+            <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+            <nav class=" ml-auto">
+                <ul class="nav align-items-center">
+                    <li class="nav-item m-t-20 m-r-50">
+                        <form method="get" action="#">
+                            <div class="form-group input-group mb-3">
+                                <label style="margin-right: 5px;margin-top: 5px;">Search AWB:</label>
+                                <input type="text" class="form-control input-sm" autocomplete="off" name="filter[awb_no]" placeholder="AWB Number(s)" required>
+                                <input type="hidden" autocomplete="off" name="filter[start_date]" value="2019-01-01" placeholder="from">
+                                <input type="hidden" autocomplete="off" name="filter[end_date]" value="2021-08-18" placeholder="to">
+                                <div class="input-group-append"><button type="submit" class="btn btn-sm btn-dark"><span class="mdi mdi-magnify" style="font-size: initial;"></span></button></div>
+
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pincode.html" class="btn btn-sm btn-info m-r-10"><i class="mdi mdi-download"></i> Serviceable pincodes list</a>
+                    </li>
+                                            <li class="nav-item">
+                            <button class="btn btn-sm btn-light">Balance &#8377;-212.04</button>
+                        </li>
+                        <li class="nav-item m-l-10">
+                            <button class="btn btn-sm btn-success" style="background:#12263f!important;border: 1px solid #12263f!important;" data-toggle="modal" data-target=".recharge_wallet_form"><i class="mdi mdi-flash"></i> Recharge</button>
+                        </li>
+                                        <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            ashutosh bharti                        </a>
+                        <div class="dropdown-menu  dropdown-menu-right">
+                                                            <a class="dropdown-item" href="profile.html">Profile</a>
+                                                        <a class="dropdown-item" href="setting.html">Settings</a>
+                            <!--<a class="dropdown-item" href="#">Customer Support</a>-->
+                            <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="user.html"> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+                <section class="admin-content">
+            <div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+                <div class="container">
+                    <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                        <div class="col-md-12 m-auto text-white p-b-20">
+                            &nbsp;
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pull-up">
+                <div class="row">
+    <div class="col-lg-12">
+        <div class="card m-b-30">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>Billing
+                             - Recharge Logs                        </h4>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                                                        <a href="billing/recharge_logs_export?" class="btn btn-outline-dark btn-sm"><i class="mdi mdi-arrow-down-bold-circle"></i> Export</a>
+                            
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <ul class="nav nav-tabs m-b-15">
+                    <li class="nav-item">
+                        <a class="nav-link  " href="new-billing.html"><i class="mdi mdi-calculator"></i> Price Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="cod_remittance.html"><i class="mdi mdi-cash"></i> COD Remittance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="recharge-logs.html"><i class="mdi mdi-wallet"></i> Wallet Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="shipping_charges.html"><i class="mdi mdi-truck-fast"></i> Shipping Charges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="invoice.html"><i class="mdi mdi-file-pdf"></i> Invoice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="credit_notes.html"<i class="mdi mdi-file-pdf"></i> Credit Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="weight.html"><i class="mdi mdi-weight"></i> Weight Reconciliation</a>
+                    </li>
+
+
+                </ul>
+                <form method="get" action="https://ship.nimbuspost.com/billing/v/recharge_logs">
+    <div class="row">
+        <div class="col-sm-2">
+
+            <input type="text" autocomplete="off" data-start-date="2021-07-19" data-end-date="2021-08-18" class="form-control date-range-picker col-sm-12 form-control-sm">
+            <input type="hidden" autocomplete="off" id="date-min" name="filter[start_date]" value="2021-07-19" placeholder="from">
+            <input type="hidden" autocomplete="off" id="date-max" name="filter[end_date]" value="2021-08-18" placeholder="to">
+
+        </div>
+        <div class="col-sm-2">
+
+            <div class="form-group">
+                <select class="form-control form-control-sm" name="filter[txn_for]" id="filter_wallet_txn">
+                                        <option  selected=""  value="">Show All</option>
+                    <option  value="cod">COD Adjustments</option>
+                    <option  value="recharge">Recharge - Gateway</option>
+                    <option  value="neft">Recharge - NEFT</option>
+                    <option  value="shipment">Shipments</option>
+                    <option  value="shipment_refund">Shipments - Refunds</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="col-sm-3">
+            <button type="submit" class="btn btn-sm btn-outline-success">Apply</button>
+            <a href="https://ship.nimbuspost.com/billing/v/recharge_logs" class="btn btn-sm btn-outline-primary">Clear</a>
+        </div>
+
+
+        <div class="col-sm-5 text-center">
+            <h6>Wallet Balance: <b>&#8377;-212.04</b></h6>
+        </div>
+    </div>
+</form>
+<div class="table-responsive" style="margin-top: 20px;">
+    <table class="table table-hover table-sm">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Txn Type</th>
+                <th>Ref No#</th>
+                <th>Transaction ID</th>
+                <th>Credit(&#8377;)</th>
+                <th>Debit(&#8377;)</th>
+                <th>Closing Balance(&#8377;)</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+                                <tr>
+                        <td>Jul 31, 2021 22:37</td>
+                        <td>Shipping</td>
+                        <td>
+                                                            <a target="blank" class="text-info" href="billing/v/shipping_charges?filter[awb_no]=14189921332192">14189921332192</a>
+                                                    </td>
+                        <td>#12440808</td>
+                        <td>-</td>
+                        <td>41.3</td>
+                        <td>-212.04</td>
+
+                        <td>COD Charges</td>
+                    </tr>
+                                    <tr>
+                        <td>Jul 31, 2021 22:37</td>
+                        <td>Shipping</td>
+                        <td>
+                                                            <a target="blank" class="text-info" href="billing/v/shipping_charges?filter[awb_no]=14189921332192">14189921332192</a>
+                                                    </td>
+                        <td>#12440807</td>
+                        <td>-</td>
+                        <td>33.7</td>
+                        <td>-170.74</td>
+
+                        <td>Freight Charges</td>
+                    </tr>
+                        </tbody>
+    </table>
+</div>
+
+<div class="row">
+
+    <div class="col-sm-12 col-md-6">
+        <div class="dataTables_info" id="example-multi_info" role="status" aria-live="polite">Showing 1 to 50 of 2 entries</div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <ul class="pagination" style="float: right;">
+                                                </ul>
+
+    </div>
+</div>            </div>
+        </div>
+    </div>
+</div>            </div>
+        </section>
+    </main>
+    <div class="modal fade recharge_wallet_form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Upgrade Your Shipping Limit</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the amount for your recharge</p>
+<div class="form-group row">
+    <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+    <div class="col-sm-6">
+        <input type="text" autocomplete="off" name="filter[order_ids]" class="form-control" required="" id="recharge_wallet_amount" placeholder="Enter Amount" value="500">
+    </div>
+    <div class="col-sm-12 text-center m-t-20">
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="500">500</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="1000">1000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="2000">2000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="5000">5000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="10000">10000</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <label for="inputPassword" class="text-right col-form-label">Payment Option</label>
+    </div>
+    <div class="col-sm-8">
+        <label>
+            <input type="radio" name="recharge_option" value="razorpay" checked >
+            <img src="img/razorpay.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+        </label>
+
+        <label>
+            <input type="radio" name="recharge_option" value="paytm">
+            <img src="img/paytm.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <button type="button" class="btn btn-primary recharge_wallet_button">Recharge</button>
+    </div>
+</div>
+
+<form id="rzp_success_form" method="post" action="#">
+    <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+</form>
+
+               </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".adjust_wallet_from_remittance_popup" data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge from Remittance</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal" class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade adjust_wallet_from_remittance_popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Recharge Wallet From COD Remittance</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="adjust_wallet_from_remittance_form">
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+        <div class="col-sm-6">
+            <input type="text" autocomplete="off" name="amount" class="form-control" required="" id="remittance_recharge_amount" placeholder="Enter Amount" value="">
+        </div>
+        <div class="col-sm-12 m-t-10">
+            <p><b>Note:</b> Nearest possible amount will be used for wallet recharge.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-primary ">Recharge</button>
+        </div>
+    </div>
+</form>                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_form" data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge Online</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal" class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade recharge_wallet_neft" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Make NEFT</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Make payment to below given account details</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <b>NEFT Bank Details</b><br />
+                            Nimbuspost Private Limited<br />
+                            Kotak Mahindra Bank<br />
+                            A/c <b>8413861638</b><br />
+                            <b>KKBK0000187</b><br />
+                            Saket New Delhi - 110017
+
+                        </div>
+                        <div class="col-sm-6">
+                            <form method="post" action="billing/neft_payment">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="amount" class="form-control" placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">UTR Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="utr_number" class="form-control" placeholder="Bank txn ref#">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade add_remove_tags" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="add_remove_tags">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+</body>
+
+</html>

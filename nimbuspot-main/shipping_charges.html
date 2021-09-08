@@ -1,0 +1,1465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nimbus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="pace-done">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK53LP4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <aside class="admin-sidebar">
+        <div class="admin-sidebar-brand">
+            <p><img src="img/Nimbus_Logo.jpg" width="100" alt="Nimbus Logo"></p>
+            <div class="ml-auto">
+                <!--<a href="#" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle pinned"></a>
+                    <a href="#" class="admin-close-sidebar"></a>-->
+            </div>
+        </div>
+        <div class="admin-sidebar-wrapper js-scrollbar">
+            <ul class="menu">
+                <li class="menu-item ">
+                    <a href="index.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Dashboard</span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-view-dashboard"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                                    <li class="menu-item ">
+                        <a href="order.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Orders</span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-package-variant-closed"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="all-shipment.html"class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Shipments
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-truck-fast"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="ndr.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Exception
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-shield-remove"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                                    <li class="menu-item ">
+                        <a href="weightreconciliation.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Weight Reco.
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-weight-kilogram"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                
+                                                            <li class="menu-item ">
+                            <a href="new-billing.html" class="menu-link">
+                                <span class="menu-label">
+                                    <span class="menu-name">Billing
+                                    </span>
+                                </span>
+                                <span class="menu-icon">
+                                    <i class="mdi mdi-cash"></i>
+                                </span>
+                            </a>
+                            <!--submenu-->
+                        </li>
+                                                                        <li class="menu-item ">
+                      <a href="reports.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Reports
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-file-document"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                                <li class="menu-item ">
+                   <a href="operation.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Control Tower
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-desktop-tower"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                <li class="menu-item ">
+                   <a href="escalations.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Escalations
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-message-text-outline"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+                
+
+                                    <li class="menu-item ">
+                        <a href="apps.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Addons
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-apps"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+                
+
+                <li class="menu-item ">
+                    <a href="setting-main.html" class="menu-link">
+                        <span class="menu-label">
+                            <span class="menu-name">Settings
+                            </span>
+                        </span>
+                        <span class="menu-icon">
+                            <i class="mdi mdi-settings"></i>
+                        </span>
+                    </a>
+                    <!--submenu-->
+                </li>
+
+
+                
+
+                    <li class="menu-item ">
+                        <a href="escalations_new.html" class="menu-link">
+                            <span class="menu-label">
+                                <span class="menu-name">Support
+                                </span>
+                            </span>
+                            <span class="menu-icon">
+                                <i class="mdi mdi-help"></i>
+                            </span>
+                        </a>
+                        <!--submenu-->
+                    </li>
+
+                
+
+            </ul>
+        </div>
+    </aside>
+    <main class="admin-main">
+        <!--site header begins-->
+        <header class="admin-header">
+            <p><img src="img/Nimbus_Logo.jpg" style="margin-left: 25px;margin-top: 10px;" width="100" alt="Nimbus Logo"></p>
+            <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+            <nav class=" ml-auto">
+                <ul class="nav align-items-center">
+                    <li class="nav-item m-t-20 m-r-50">
+                        <form method="get" action="#">
+                            <div class="form-group input-group mb-3">
+                                <label style="margin-right: 5px;margin-top: 5px;">Search AWB:</label>
+                                <input type="text" class="form-control input-sm" autocomplete="off" name="filter[awb_no]" placeholder="AWB Number(s)" required>
+                                <input type="hidden" autocomplete="off" name="filter[start_date]" value="2019-01-01" placeholder="from">
+                                <input type="hidden" autocomplete="off" name="filter[end_date]" value="2021-08-18" placeholder="to">
+                                <div class="input-group-append"><button type="submit" class="btn btn-sm btn-dark"><span class="mdi mdi-magnify" style="font-size: initial;"></span></button></div>
+
+                            </div>
+
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pincode.html" class="btn btn-sm btn-info m-r-10"><i class="mdi mdi-download"></i> Serviceable pincodes list</a>
+                    </li>
+                                            <li class="nav-item">
+                            <button class="btn btn-sm btn-light">Balance &#8377;-212.04</button>
+                        </li>
+                        <li class="nav-item m-l-10">
+                            <button class="btn btn-sm btn-success" style="background:#12263f!important;border: 1px solid #12263f!important;" data-toggle="modal" data-target=".recharge_wallet_form"><i class="mdi mdi-flash"></i> Recharge</button>
+                        </li>
+                                        <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            ashutosh bharti                        </a>
+                        <div class="dropdown-menu  dropdown-menu-right">
+                                                            <a class="dropdown-item" href="profile.html">Profile</a>
+                                                        <a class="dropdown-item" href="setting.html">Settings</a>
+                            <!--<a class="dropdown-item" href="#">Customer Support</a>-->
+                            <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="user.html"> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+                <section class="admin-content">
+                    <div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+                        <div class="container">
+                            <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                                <div class="col-md-12 m-auto text-white p-b-20">
+                                    &nbsp;
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid pull-up">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card m-b-30">
+                                    <div class="card-header">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <h4>Billing
+                                                     - Shipping Charges
+                                                </h4>
+                                            </div>
+                                            <div class="col-sm-6 text-right">
+                                                <a href="billing/shipping_charges_export" class="btn btn-outline-dark btn-sm"><i class="mdi mdi-arrow-down-bold-circle"></i> Export</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="nav nav-tabs m-b-15">
+                                            <li class="nav-item">
+                                                <a class="nav-link  " href="new-billing.html"><i class="mdi mdi-calculator"></i> Price Calculator</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link  " href="cod_remittance.html"><i class="mdi mdi-cash"></i> COD Remittance</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="recharge-logs.html"><i class="mdi mdi-wallet"></i> Wallet Transactions</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="shipping_charges.html"><i class="mdi mdi-truck-fast"></i> Shipping Charges</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="invoice.html"><i class="mdi mdi-file-pdf"></i> Invoice</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="credit_notes.html"<i class="mdi mdi-file-pdf"></i> Credit Notes</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="weight.html"><i class="mdi mdi-weight"></i> Weight Reconciliation</a>
+                                            </li>
+
+
+                                        </ul>
+                                        <form method="get" action="https://ship.nimbuspost.com/billing/v/shipping_charges">
+                                            <div class="row" id="filter_row">
+                                                <div class="col-sm-2">
+                                                    <input type="text" autocomplete="off" data-start-date="" data-end-date=""  class="form-control date-range-picker col-sm-12 form-control-sm">
+                                                    <input type="hidden" autocomplete="off" id="date-min"  name="filter[start_date]" value="" placeholder="from">
+                                                    <input type="hidden" autocomplete="off" id="date-max"  name="filter[end_date]" value="" placeholder="to">
+                                                </div>
+                                                <div class="col-sm-2" >
+                                                    <input type="text" autocomplete="off" name="filter[awb_no]" value="" class="form-control form-control-sm" placeholder="AWB Separated by comma">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <button type="submit" class="btn btn-sm btn-outline-success">Apply</button>
+                                                    <a href="https://ship.nimbuspost.com/billing/v/shipping_charges" class="btn btn-sm btn-outline-primary">Clear</a>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <div class="table-responsive" style="margin-top: 20px;">
+                                            <table class="table table-hover table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Shipment Created</th>
+                                                        <th>Courier</th>
+                                                        <th>AWB Number</th>
+                                                        <th>Status</th>
+                                                        <th>Freight Charges(&#8377;)</th>
+                                                        <th>COD Charges(&#8377;)</th>
+                                                        <th>Entered Wgt(kg)</th>
+                                                        <th>Applied Wgt(kg)</th>
+                                                        <th>Extra Wgt Charges(&#8377;)</th>
+                                                        <th>RTO Charges</th>
+                                                        <th>COD Charge Reversed</th>
+                                                        <th>RTO Extra Wgt Charges</th>
+                                                        <th>Total Charges</th>
+                                                        <th>Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                                        <tr>
+                                                                <td>Jul 31, 2021</td>
+                                                                <td>Xpressbees Air</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=14189921332192">14189921332192</a></td>
+                                                                <td>PENDING PICKUP</td>
+                                                                <td>33.7</td>
+                                                                <td>41.3</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>75</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=4508186" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>May 15, 2021</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59510798454">59510798454</a></td>
+                                                                <td>BOOKED</td>
+                                                                <td>45</td>
+                                                                <td>44.84</td>
+                                                                <td>0.5</td>
+                                                                <td>0</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>89.84</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=3355128" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 12, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76862514NIM">SF76862514NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>60</td>
+                                                                <td>35</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>95</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1645968" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 11, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76868601NIM">SF76868601NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>60</td>
+                                                                <td>35</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>95</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1638091" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 11, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76892120NIM">SF76892120NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>60</td>
+                                                                <td>35</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    60                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>155</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1638090" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 10, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76885263NIM">SF76885263NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>35</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>60</td>
+                                                                <td>-35</td>
+                                                                <td>-</td>
+
+                                                                <td>120</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1630018" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 10, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76838086NIM">SF76838086NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>35</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    80                        </td>
+                                                                <td>60</td>
+                                                                <td>-35</td>
+                                                                <td>80</td>
+
+                                                                <td>280</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1630019" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 10, 2020</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59606105473">59606105473</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>59</td>
+                                                                <td>45</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>104</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1630016" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 09, 2020</td>
+                                                                <td>Delhivery Air</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=4152911512125">4152911512125</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>75</td>
+                                                                <td>40</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    75                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>190</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1621814" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 09, 2020</td>
+                                                                <td>Delhivery Air</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=4152911512114">4152911512114</a></td>
+                                                                <td>CANCELLED</td>
+                                                                <td>75</td>
+                                                                <td>40</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>115</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1621815" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 09, 2020</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59605484374">59605484374</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>80</td>
+                                                                <td>45</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    160                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>285</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1621805" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 09, 2020</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59605484385">59605484385</a></td>
+                                                                <td>BOOKED</td>
+                                                                <td>59</td>
+                                                                <td>45</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>104</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1621806" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 02, 2020</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59602018840">59602018840</a></td>
+                                                                <td>BOOKED</td>
+                                                                <td>59</td>
+                                                                <td>45</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>104</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1567439" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 02, 2020</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59602018851">59602018851</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>59</td>
+                                                                <td>45</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    118                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>222</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1567440" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 01, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76885987NIM">SF76885987NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    60                        </td>
+                                                                <td>60</td>
+                                                                <td>-51.8</td>
+                                                                <td>60</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1559901" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 01, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76851233NIM">SF76851233NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    60                        </td>
+                                                                <td>60</td>
+                                                                <td>-51.8</td>
+                                                                <td>60</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1559902" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Dec 01, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76850702NIM">SF76850702NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    60                        </td>
+                                                                <td>60</td>
+                                                                <td>-51.8</td>
+                                                                <td>60</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1559903" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Nov 23, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76876749NIM">SF76876749NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>35</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    60                        </td>
+                                                                <td>60</td>
+                                                                <td>-35</td>
+                                                                <td>60</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1498455" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Nov 18, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76898429NIM">SF76898429NIM</a></td>
+                                                                <td>BOOKED</td>
+                                                                <td>70</td>
+                                                                <td>49.8</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>119.8</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1456160" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Nov 17, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76889519NIM">SF76889519NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>171.8</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1446040" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Nov 17, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76828605NIM">SF76828605NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>70</td>
+                                                                <td>-41</td>
+                                                                <td>-</td>
+
+                                                                <td>140</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1446041" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Nov 03, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76832803NIM">SF76832803NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1347557" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Nov 03, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76873943NIM">SF76873943NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1347558" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 30, 2020</td>
+                                                                <td>Bluedart Express</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=59585451984">59585451984</a></td>
+                                                                <td>BOOKED</td>
+                                                                <td>68.5</td>
+                                                                <td>64.75</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    137                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>270.25</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1322648" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 30, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76905752NIM">SF76905752NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1322647" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 29, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76857780NIM">SF76857780NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1315782" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 29, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76905132NIM">SF76905132NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>45</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    31                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>127.8</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1315783" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 29, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76879958NIM">SF76879958NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>111</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1315784" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 28, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76905612NIM">SF76905612NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1304718" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 28, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76835924NIM">SF76835924NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>-</td>
+
+                                                                <td>140</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1304719" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 28, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76884115NIM">SF76884115NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>0</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>120</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1304720" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 28, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76898673NIM">SF76898673NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1304721" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 28, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76839746NIM">SF76839746NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>70</td>
+                                                                <td>-41</td>
+                                                                <td>-</td>
+
+                                                                <td>140</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1304722" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 26, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76889996NIM">SF76889996NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>60</td>
+                                                                <td>0</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>60</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1293283" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 26, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76855126NIM">SF76855126NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    110                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>221</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1293284" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 26, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76842524NIM">SF76842524NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>171.8</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1293285" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 26, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76903833NIM">SF76903833NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1293286" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 24, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF10006893NIM">SF10006893NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    110                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>221</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1284713" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 23, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76862372NIM">SF76862372NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>111</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1278752" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 23, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF10009408NIM">SF10009408NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>51.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-51.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1278753" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 21, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76894278NIM">SF76894278NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>48.42</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-48.42</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1267830" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 21, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76884600NIM">SF76884600NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>48.42</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-48.42</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1267831" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 21, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76884293NIM">SF76884293NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>53.8</td>
+                                                                <td>0.5</td>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    50                        </td>
+                                                                <td>70</td>
+                                                                <td>-53.8</td>
+                                                                <td>50</td>
+
+                                                                <td>240</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1267832" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 21, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76877446NIM">SF76877446NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>70</td>
+                                                                <td>53.8</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>70</td>
+                                                                <td>-53.8</td>
+                                                                <td>-</td>
+
+                                                                <td>140</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1267833" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 19, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76826637NIM">SF76826637NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    110                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>221</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1251701" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 17, 2020</td>
+                                                                <td>Delhivery Air</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=4152910959475">4152910959475</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>75</td>
+                                                                <td>44.98</td>
+                                                                <td>0.5</td>
+                                                                <td>1.5</td>
+                                                                <td>
+                                                                    150                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>269.98</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1238436" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 17, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76862646NIM">SF76862646NIM</a></td>
+                                                                <td>RTO</td>
+                                                                <td>60</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>60</td>
+                                                                <td>-41</td>
+                                                                <td>-</td>
+
+                                                                <td>120</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1238418" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 16, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76910190NIM">SF76910190NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>60</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>101</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1233826" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 15, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76828176NIM">SF76828176NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>111</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1226309" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                                <tr>
+                                                                <td>Oct 15, 2020</td>
+                                                                <td>Shadowfax</td>
+                                                                <td><a class="text-info" target="blank" href="shipping/all?filter[awb_no]=SF76894945NIM">SF76894945NIM</a></td>
+                                                                <td>DELIVERED</td>
+                                                                <td>70</td>
+                                                                <td>41</td>
+                                                                <td>0.5</td>
+                                                                <td>-</td>
+                                                                <td>
+                                                                    -                        </td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+
+                                                                <td>111</td>
+                                                                <td><a target="_blank" href="recharge_logs.html?filter[shipment_id]=1226310" class="btn btn-sm btn-outline-info">View</a></td>
+
+                                                            </tr>
+                                                                    </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="dataTables_info" id="example-multi_info" role="status" aria-live="polite">Showing 1 to 50 of 63 entries</div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <ul class="pagination" style="float: right;">
+                                                    <li class="paginate_button page-item active"><a class="page-link" href="https://ship.nimbuspost.com/billing/v/shipping_charges">1</a></li><li class="paginate_button page-item "><a href="https://ship.nimbuspost.com/billing/v/shipping_charges/2" aria-controls="example-multi" tabindex="0" class="page-link" data-ci-pagination-page="2">2</a></li><a href="https://ship.nimbuspost.com/billing/v/shipping_charges/2" aria-controls="example-multi" tabindex="0" class="page-link" data-ci-pagination-page="2" rel="next">Next</a>             
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </section>
+    </main>
+    <div class="modal fade recharge_wallet_form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Upgrade Your Shipping Limit</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Enter the amount for your recharge</p>
+<div class="form-group row">
+    <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+    <div class="col-sm-6">
+        <input type="text" autocomplete="off" name="filter[order_ids]" class="form-control" required="" id="recharge_wallet_amount" placeholder="Enter Amount" value="500">
+    </div>
+    <div class="col-sm-12 text-center m-t-20">
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="500">500</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="1000">1000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="2000">2000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="5000">5000</button>
+        <button type="button" class="btn btn-outline-success btn-sm set_recharge_amount" data-amount="10000">10000</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <label for="inputPassword" class="text-right col-form-label">Payment Option</label>
+    </div>
+    <div class="col-sm-8">
+        <label>
+            <input type="radio" name="recharge_option" value="razorpay" checked >
+            <img src="img/razorpay.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+        </label>
+
+        <label>
+            <input type="radio" name="recharge_option" value="paytm">
+            <img src="img/paytm.png" class="m-b-15 mr-2" style="width:100px;border-color:#0c9;">
+        </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <button type="button" class="btn btn-primary recharge_wallet_button">Recharge</button>
+    </div>
+</div>
+
+<form id="rzp_success_form" method="post" action="#">
+    <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+</form>
+               </div>
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".adjust_wallet_from_remittance_popup" data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge from Remittance</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal" class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade adjust_wallet_from_remittance_popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Recharge Wallet From COD Remittance</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="adjust_wallet_from_remittance_form">
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-3 text-right col-form-label">Amount</label>
+        <div class="col-sm-6">
+            <input type="text" autocomplete="off" name="amount" class="form-control" required="" id="remittance_recharge_amount" placeholder="Enter Amount" value="">
+        </div>
+        <div class="col-sm-12 m-t-10">
+            <p><b>Note:</b> Nearest possible amount will be used for wallet recharge.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-primary ">Recharge</button>
+        </div>
+    </div>
+</form>                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_form" data-dismiss="modal" class="btn btn-outline-info btn-sm">Recharge Online</button>
+                    <button type="button" data-toggle="modal" data-target=".recharge_wallet_neft" data-dismiss="modal" class="btn btn-outline-info btn-sm">Pay NEFT</button>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade recharge_wallet_neft" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" id="fulfillment_info">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel">Make NEFT</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Make payment to below given account details</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <b>NEFT Bank Details</b><br />
+                            Nimbuspost Private Limited<br />
+                            Kotak Mahindra Bank<br />
+                            A/c <b>8413861638</b><br />
+                            <b>KKBK0000187</b><br />
+                            Saket New Delhi - 110017
+
+                        </div>
+                        <div class="col-sm-6">
+                            <form method="post" action="billing/neft_payment">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="amount" class="form-control" placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-sm-4 col-form-label">UTR Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" required="" name="utr_number" class="form-control" placeholder="Bank txn ref#">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade add_remove_tags" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+            <div class="modal-content" id="add_remove_tags">
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+</body>
+
+</html>

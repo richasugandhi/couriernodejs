@@ -1,0 +1,22 @@
+body{font-family:poppins;background-color: #fff;
+}
+*{box-sizing:border-box}
+.forgett .btn {
+    box-shadow:none;
+}
+input[type=text],input[type=password],input[type=email]{width:100%;font-size:18px;border:none;margin:5px 0 22px;display:inline-block;border-bottom:1px solid #000;font-weight:400;font-family:poppins}input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{background-color:#ddd;outline:none;font-size:18px;font-weight:400;font-family:poppins}hr{margin-bottom:25px}button{border-radius:5px;background-color:#000;color:#fff;padding:14px 20px;margin:8px 0;border:none;cursor:pointer;width:100%;opacity:.9}button:hover{opacity:1;background-color:#c03}.abc{margin-top:126px;text-align:center}
+.welcome{font-family:poppins;font-size:36px;color:#000;margin-top:10px;cursor:pointer}
+.login{font-family:poppins;font-size:18px;color:#333}
+.label{text-align:left}
+.forget{cursor:pointer;color:#c03;margin-left:208px;text-align:center}
+.forgeta{cursor:pointer;color:#c03;text-align:center;margin-top:21px}a{cursor:pointer;color:#c03!important}
+.forgeta a{cursor:pointer;color:#c03!important;text-align:center;margin-top:21px}.account{margin-top:20px;margin-left:40px}
+.forgetr{margin-top:20px;cursor:pointer}@media(min-width:481px) and (max-width:767px){
+	.mobile{display:none;background-image:url(img/LeftImage.png)}.forget{cursor:pointer;color:#c03;margin:0 auto;text-align:center}
+	.forgeta{cursor:pointer;color:#c03;text-align:center;margin-top:21px}.abc{margin-top:26px;text-align:center}}
+	@media(min-width:320px) and (max-width:480px){.mobile{display:none;background-image:url(img/LeftImage.png)}
+	.forget{cursor:pointer;color:#c03;margin:0 auto;text-align:center}.forgeta{cursor:pointer;color:#c03;text-align:center;margin-top:21px}
+	.abc{margin-top:26px;text-align:center}}
+
+
+		

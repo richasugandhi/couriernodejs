@@ -1,0 +1,291 @@
+<section class="admin-content">
+    <div class="bg-dark m-b-30" style="margin-bottom: 0px !important;">
+        <div class="container">
+            <div class="row p-b-60 p-t-60" style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                <div class="col-md-12 m-auto text-white p-b-20">
+                    &nbsp;
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pull-up">
+
+        <style>
+            .row_scroll {
+
+                max-height: 350px;
+                overflow-y: scroll;
+                /* Add the ability to scroll */
+            }
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .row_scroll::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE and Edge */
+            .row_scroll {
+                -ms-overflow-style: none;
+            }
+        </style>
+
+        <section class="admin-content">
+            <div class=" m-b-10">
+                <div class="container-fluid">
+                    <div class="row p-b-60 p-t-60"
+                        style="padding-bottom: 60px !important;padding-top: 0px !important;">
+                        <div class="col-md-3 ">
+                            <form method="get" action="#"
+                                class="date_filter_form">
+                                <div class="form-group">
+                                    <input type="text" autocomplete="off" data-start-date="2021-07-13"
+                                        data-end-date="2021-08-12"
+                                        class="form-control date-range-picker col-sm-12">
+                                    <input type="hidden" autocomplete="off" id="date-min"
+                                        name="filter[start_date]" value="2021-07-13" placeholder="from">
+                                    <input type="hidden" autocomplete="off" id="date-max"
+                                        name="filter[end_date]" value="2021-08-12" placeholder="to">
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                        </div>
+                        <div class="col-md-6 text-right text-white p-b-30">
+                            <h2>Dashboard</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pull-up">
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="card text-white bg-success mb-3">
+                                    <div class="card-body">
+                                        <h2 class="card-title">1</h2>
+                                        <p class="card-text">Total Shipments<br />
+                                            (Total forward shipments)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+
+                                <div class="card text-white bg-info mb-3">
+                                    <div class="card-body">
+                                        <h2 class="card-title">0 (0%)</h2>
+                                        <p class="card-text">Delivered Shipments<br />
+                                            (Total forward delivered orders)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card text-white bg-primary mb-3">
+                                    <div class="card-body">
+                                        <h2 class="card-title">&#8377;0</h2>
+                                        <p class="card-text">Total Revenue<br />
+                                            (Value of delivered orders)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="card text-white bg-secondary mb-3">
+                                    <div class="card-body">
+                                        <h2 class="card-title">0 (0%)</h2>
+                                        <p class="card-text">Total RTO<br />
+                                            (Orders returned to origin)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                                <div class="card m-b-30">
+                                    <div class="card-body">
+                                        <canvas id="myChart3" class="build-chart" chart-data="myChart3"
+                                            height="200"></canvas>
+
+                                        <script>
+                                            var myChart3 = {
+                                                type: 'pie',
+                                                data: {
+                                                    labels: ['Xpressbees Air'],
+                                                    datasets: [{
+                                                        label: 'Courier',
+                                                        data: [1],
+                                                        borderWidth: 1,
+                                                        backgroundColor: ['#19b5fe', '#4d148c', '#0c9', '#f7bc06', '#95aac9', '#20c997', '#7140D1']
+                                                    }]
+                                                },
+                                                options: {
+                                                    title: {
+                                                        display: true,
+                                                        text: 'Courier Wise Load'
+                                                    },
+                                                    tooltips: {
+                                                        mode: 'index',
+                                                        intersect: false
+                                                    },
+                                                    responsive: true,
+                                                }
+                                            };
+                                        </script>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-header bg-dark text-white">
+                                        <h5>Courier Wise Status</h5>
+                                    </div>
+                                    <div class="card-body row_scroll">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Courier</th>
+                                                        <th>Total</th>
+                                                        <th>Unshipped</th>
+                                                        <th>Pending Pickup</th>
+                                                        <th>In Transit</th>
+                                                        <th>Delivered</th>
+                                                        <th>RTO</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Xpressbees Air</td>
+                                                        <td>1</td>
+                                                        <td>0</td>
+                                                        <td>1</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card m-b-30">
+                                    <div class="card-body">
+                                        <canvas id="myChart" class="build-chart" chart-data="myChart"
+                                            height="200"></canvas>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card m-b-">
+                                    <div class="card-body">
+                                        <canvas id="myChart4" class="build-chart" chart-data="myChart4"
+                                            height="200"></canvas>
+
+                                        <script>
+                                            var myChart4 = {
+                                                type: 'pie',
+                                                data: {
+                                                    labels: ['COD', 'Prepaid'],
+                                                    datasets: [{
+                                                        label: 'Courier',
+                                                        data: [1, 0],
+                                                        borderWidth: 1,
+                                                        backgroundColor: ['#7140D1', '#20c997', '#95aac9', '#f7bc06', '#0c9', '#4d148c', '#19b5fe']
+                                                    }]
+                                                },
+                                                options: {
+                                                    title: {
+                                                        display: true,
+                                                        text: 'Payment Wise Load'
+                                                    },
+                                                    tooltips: {
+                                                        mode: 'index',
+                                                        intersect: false
+                                                    },
+                                                    responsive: true,
+                                                }
+                                            };
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card m-b-30">
+                                    <div class="card-header">
+                                        Product Wise Status
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Name</th>
+                                                        <th>Product SKU</th>
+                                                        <th>Total Shipments</th>
+                                                        <th>Not Shipped</th>
+                                                        <th>Pending Pickup</th>
+                                                        <th>In Transit</th>
+                                                        <th>Delivered</th>
+                                                        <th>RTO</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span data-toggle="tooltip" data-html="true"
+                                                                title="Band">
+                                                                Band </span>
+                                                        </td>
+                                                        <td>fn123456</td>
+                                                        <td>1</td>
+                                                        <td>0</td>
+                                                        <td>1</td>
+                                                        <td>0</td>
+                                                        <td>0 (0%)</td>
+                                                        <td>0 (0%)</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+            $(document).ready(function() {
+                dateRangeFunction = function() {
+                    $('.date_filter_form').submit();
+                }
+            });
+        </script> 
+    </div>
+</section>

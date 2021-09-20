@@ -44,14 +44,15 @@ app.use(expressValidator());
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var orderRouter = require('./api/users/route/order');
+var orderRouter = require('./api/users/route/order.route');
 var usersApiRouter = require('./api/users/route/user.route');
+var orderApiRouter = require('./api/users/route/order.route');
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/order', orderRouter);
 app.use('/api/users', usersApiRouter);
-
+app.use('/api/order', orderApiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

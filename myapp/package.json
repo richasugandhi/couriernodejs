@@ -21,6 +21,8 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
+    "mysql-await": "^2.1.8",
+    "node-input-validator": "^4.4.1",
     "req-flash": "0.0.3"
   },
   "devDependencies": {
